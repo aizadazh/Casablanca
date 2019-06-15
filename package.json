@@ -1,0 +1,26 @@
+{
+  "name": "casablanca",
+  "version": "1.0.0",
+  "description": "casablanca",
+  "main": "index.js",
+  "scripts": {
+    "test": "123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aizadazh/Casablanca.git"
+  },
+  "keywords": [
+    "casa"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aizadazh/Casablanca/issues"
+  },
+  "homepage": "https://github.com/aizadazh/Casablanca#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
