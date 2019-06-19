@@ -7,12 +7,82 @@
   .welcome .welcome__display1 {
     color: #ffffff;
     font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
     text-align: center;
     padding-top: 7em; }
   .welcome .welcome__line {
     width: 4rem;
-    border-bottom: 2px solid #ffffff; }
+    border-bottom: 2px solid #ffffff;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem; }
   .welcome .welcome__text {
     color: #ffffff;
+    max-width: 60%;
+    font-size: 1rem;
     text-align: center;
-    max-width: 40%; }
+    margin: 0 auto; }
+  .welcome .mouse-scroll {
+    width: 1em;
+    height: auto;
+    padding-top: 12em; }
+  @media only screen and (min-width: 320px) {
+    .welcome .welcome__display1 {
+      font-size: 1rem;
+      padding-top: 0.1em; }
+    .welcome .welcome__line {
+      width: 3rem;
+      margin-bottom: 0.3rem;
+      padding-top: 0.3rem; }
+    .welcome .welcome__text {
+      max-width: 90%;
+      font-size: 0.7rem; }
+    .welcome .mouse-scroll {
+      padding-top: 1em; } }
+  @media only screen and (min-width: 480px) {
+    .welcome .welcome__display1 {
+      font-size: 1.5rem;
+      padding-top: 1.5em; }
+    .welcome .welcome__line {
+      width: 3rem;
+      margin-bottom: 0.5rem;
+      padding-top: 0.5rem; }
+    .welcome .welcome__text {
+      max-width: 90%;
+      font-size: 1rem; }
+    .welcome .mouse-scroll {
+      padding-top: 2em; } }
+  @media only screen and (min-width: 768px) {
+    .welcome .welcome__display1 {
+      font-size: 2rem;
+      padding-top: 2.5em; }
+    .welcome .welcome__line {
+      width: 3rem;
+      margin-bottom: 1rem;
+      padding-top: 1rem; }
+    .welcome .welcome__text {
+      max-width: 70%;
+      font-size: 1.3rem; }
+    .welcome .mouse-scroll {
+      width: 1.5em;
+      height: auto;
+      padding-top: 1.5em; } }
+  @media only screen and (min-width: 1024px) {
+    .welcome .welcome__display1 {
+      font-size: 2.5rem;
+      padding-top: 3em; }
+    .welcome .welcome__line {
+      width: 4rem;
+      margin-bottom: 1rem;
+      padding-top: 1rem; }
+    .welcome .welcome__text {
+      max-width: 80%;
+      font-size: 1.5rem; }
+    .welcome .mouse-scroll {
+      width: 2em;
+      height: auto;
+      padding-top: 7em; } }
+
+html {
+  font-size: 1rem; }

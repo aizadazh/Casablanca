@@ -10,15 +10,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <section class="welcome">
-                <h1 class="welcome__display1">WE’VE GOT THE TALENT</h1>
-                <col-xs-4>
-                    <div class="welcome__line"></div>
-                </col>
-                <p class="welcome__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                        Aenean commodo ligula eget dolor. Aenean massa.</p>
-
+        <div class="row">                    
+            <section class="welcome">                
+                <nav class="navbar">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacts</a>
+                            </li>
+                        </ul>                          
+                </nav>               
+                <h1 class="welcome__display1">We've got the talent</h1>
+                <div class="welcome__line"></div>                
+                <p class="welcome__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>                
+                <div class="col-md-1 col-xs-1 text-center mx-auto">
+                    <img class="mouse-scroll" src="images/Mouse.png" alt="mouse-scroll">
+                </div>
+            
             </section>
         </div>
     </div>
