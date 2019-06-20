@@ -1,116 +1,112 @@
-.welcome{
+.welcome__section{
     height: 100vh;
-    width:100%;
+    width:auto;
     background: url("../images/hero.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     opacity: 0.9; 
-    .welcome__display1{
-        color:$white;
-        font-weight: bold;  
-        font-size: 2.5rem;       
-        text-transform: uppercase;
-        text-align: center; 
-        padding-top: 7em;   
-    }    
-    .welcome__line{        
-        width:4rem;
-        border-bottom: 2px solid $white; 
-        margin: 0 auto;  
-        margin-bottom: 1.5rem;
-        padding-top: 1.5rem;        
-    }
-    .welcome__text {
-        color: $white;       
-        max-width: 60%;
-        font-size: 1rem;       
-        text-align: center;
-        margin: 0 auto;
-    }
-    .mouse-scroll{
-        width: 1em;
-        height:auto;
-        padding-top: 12em;
-    }
-@media only screen and (min-width: 320px) {
-    .welcome__display1 {
-        font-size: 1rem;
-        padding-top: 0.1em;
-    }
-    .welcome__line{        
-        width:3rem;
-        margin-bottom: 0.3rem;
-        padding-top: 0.3rem;          
-    }
-    .welcome__text{
-        max-width: 90%;
-        font-size: 0.7rem;
-    }
-    .mouse-scroll{       
-        padding-top: 1em;
-    }
-   
-    }
-@media only screen and (min-width: 480px) {
-    .welcome__display1 {
-        font-size: 1.5rem;
-        padding-top: 1.5em;
-    }
-    .welcome__line{        
-        width:3rem;  
-        margin-bottom: 0.5rem;
-        padding-top: 0.5rem;      
-                
-    }
-    .welcome__text{
-        max-width: 90%;
-        font-size: 1rem;
-    }
-    .mouse-scroll{
-        padding-top: 2em;
-    }
-}
-@media only screen and (min-width: 768px) {    
-    .welcome__display1 {
-        font-size: 2rem;
-        padding-top: 2.5em;        
-    }
-    .welcome__line{        
-        width:3rem; 
-        margin-bottom: 1rem;
-        padding-top: 1rem;            
-                 
-    }
-    .welcome__text{
-        max-width: 70%;
-        font-size: 1.3rem;
-    }
-    .mouse-scroll{  
-        width: 1.5em;
-        height:auto;      
-        padding-top: 1.5em;
-    }
-   
-    }
-@media only screen and (min-width: 1024px) {    
-        .welcome__display1 {
-            font-size: 2.5rem;
-            padding-top: 3em;        
-        }
+    .welcome__section_content{
+        display:flex;
+        flex-direction: column;
+        align-content: space-between;   
+        .display1{
+            color:$white;                             
+            text-transform: uppercase;          
+        }    
         .welcome__line{        
-            width:4rem; 
-            margin-bottom: 1rem;
-            padding-top: 1rem;                       
+            width:4rem;
+            border-bottom: 2px solid $white;            
         }
-        .welcome__text{
-            max-width: 80%;
-            font-size: 1.5rem;         
+        .welcome__text {
+            color: $white;       
+           
         }
-        .mouse-scroll{               
-            width: 2em;
-            height:auto;      
-            padding-top: 7em;
+        .mouse-scroll{
+            width: 1em;
+            height:auto;
+                     
+            
         }
+    }
+// @media only screen and (min-width: 320px) {
+//     .welcome__display1 {
+//         font-size: 1rem;
+//         padding-top: 0.1em;
+//     }
+//     .welcome__line{        
+//         width:3rem;
+//         margin-bottom: 0.3rem;
+//         padding-top: 0.3rem;          
+//     }
+//     .welcome__text{
+//         max-width: 90%;
+//         font-size: 0.7rem;
+//     }
+//     .mouse-scroll{       
+//         padding-top: 1em;
+//     }
+   
+//     }
+// @media only screen and (min-width: 480px) {
+//     .welcome__display1 {
+//         font-size: 1.5rem;
+//         padding-top: 1.5em;
+//     }
+//     .welcome__line{        
+//         width:3rem;  
+//         margin-bottom: 0.5rem;
+//         padding-top: 0.5rem;      
+                
+//     }
+//     .welcome__text{
+//         max-width: 90%;
+//         font-size: 1rem;
+//     }
+//     .mouse-scroll{
+//         padding-top: 2em;
+//     }
+// }
+// @media only screen and (min-width: 768px) {    
+//     .welcome__display1 {
+//         font-size: 2rem;
+//         padding-top: 2.5em;        
+//     }
+//     .welcome__line{        
+//         width:3rem; 
+//         margin-bottom: 1rem;
+//         padding-top: 1rem;            
+                 
+//     }
+//     .welcome__text{
+//         max-width: 70%;
+//         font-size: 1.3rem;
+//     }
+//     .mouse-scroll{  
+//         width: 1.5em;
+//         height:auto;      
+//         padding-top: 1.5em;
+//     }
+   
+//     }
+// @media only screen and (min-width: 1024px) {    
+//         .welcome__display1 {
+//             font-size: 2.5rem;
+//             padding-top: 3em;        
+//         }
+//         .welcome__line{        
+//             width:4rem; 
+//             margin-bottom: 1rem;
+//             padding-top: 1rem;                       
+//         }
+//         .welcome__text{
+//             max-width: 80%;
+//             font-size: 1.5rem;         
+//         }
+//         .mouse-scroll{               
+//             width: 2em;
+//             height:auto;      
+//             padding-top: 7em;
+//         }
        
-        }
+//         }
 
-}
+ }
