@@ -30,7 +30,7 @@ html {
     display: flex;
     flex-direction: column;
     align-content: space-between; }
-    .intro__section .intro__section_content .display2 {
+    .intro__section .intro__section_content .display3 {
       text-transform: uppercase;
       font-weight: bold; }
     .intro__section .intro__section_content .intro__line {
@@ -55,3 +55,36 @@ html {
         background: #ffffff;
         color: #222222;
         border: 1px solid #222222; }
+
+.work__section {
+  height: 100vh;
+  width: auto; }
+  .work__section .work__section_content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; }
+    .work__section .work__section_content .display3 {
+      text-transform: uppercase;
+      font-weight: bold; }
+    .work__section .work__section_content .work__line {
+      width: 4rem;
+      border-bottom: 2px solid #222222; }
+    .work__section .work__section_content ul li a {
+      text-transform: uppercase;
+      color: #b1afaf; }
+    .work__section .work__section_content .work__section_images {
+      display: flex;
+      justify-content: space-between; }
+      .work__section .work__section_content .work__section_images .btn {
+        color: #222222;
+        font-weight: bold;
+        border: 1px solid #222222;
+        border-radius: 2px;
+        width: 23em;
+        height: 3em;
+        background: transparent;
+        cursor: pointer; }
+        .work__section .work__section_content .work__section_images .btn:hover {
+          background: #222222;
+          color: #ffffff;
+          border: 1px solid #ffffff; }
