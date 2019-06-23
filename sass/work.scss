@@ -1,5 +1,5 @@
 .work__section{
-    height: 100vh;
+    height: auto;
     width: auto;
     .work__section_content{        
         display: flex;
@@ -14,10 +14,15 @@
             border-bottom: 2px solid $line;             
         }
         ul {
-            li{
+            li{                
                 & a{
                     text-transform: uppercase;
                     color: $grey;
+                    font-weight: 400;
+                    &:hover{
+                        color: $line;
+                        
+                        }
                 }
             }
 

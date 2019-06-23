@@ -1,0 +1,16 @@
+.client__section{
+    height: 100vh;
+    width: auto;   
+    .client__section_content{      
+        background: $bg-light;       
+        .display3{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .client__line{
+            width: 4rem;
+            border-bottom: 2px solid $line;             
+        }
+    }   
+}   
+
