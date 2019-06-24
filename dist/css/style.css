@@ -93,9 +93,10 @@ html {
           border: 1px solid #ffffff; }
 
 .help__section {
-  height: 100vh;
+  height: 50vh;
   width: auto; }
   .help__section .help__section_content {
+    height: 50vh;
     background: url("../images/client.png") no-repeat;
     background-size: cover; }
     .help__section .help__section_content .btn {
@@ -113,9 +114,10 @@ html {
         border: 1px solid #222222; }
 
 .client__section {
-  height: 100vh;
+  height: 50vh;
   width: auto; }
   .client__section .client__section_content {
+    height: 50vh;
     background: #f4f4f4; }
     .client__section .client__section_content .display3 {
       text-transform: uppercase;
@@ -123,3 +125,19 @@ html {
     .client__section .client__section_content .client__line {
       width: 4rem;
       border-bottom: 2px solid #222222; }
+
+.about__section {
+  height: 100vh;
+  width: auto; }
+  .about__section .about__section_content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; }
+    .about__section .about__section_content .display3 {
+      text-transform: uppercase;
+      font-weight: bold; }
+    .about__section .about__section_content .about__line {
+      width: 4rem;
+      border-bottom: 2px solid #222222; }
+    .about__section .about__section_content .about__text {
+      color: #222222; }

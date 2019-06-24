@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>                   
-    <section class="container welcome__section">         
+    <section class="container-fluid welcome__section">         
         <div class="row welcome__section_content">         
             <div class="col-md-12 col-xs-12 text-center mt-5 pt-5 mx-auto">             
                 <h1 class="display1">We've got the talent</h1>
@@ -24,7 +24,7 @@
             </div>   
         </div>              
     </section>
-    <section class="container intro__section">        
+    <section class="container-fluid intro__section">        
         <div class="row my-5 intro__section_content">
             <div class="col-md-12 col-xs-12 text-center pt-5">
                 <h3 class="display3">Introduction</h3>
@@ -41,7 +41,7 @@
             </div>  
         </div>                       
     </section>
-    <section class="container work__section">        
+    <section class="container-fluid work__section">        
         <div class="row my-2 work__section_content">
             <div class="col-md-12 col-xs-12 text-center pt-5">
                 <h3 class="display3">Some of our work</h3>
@@ -82,39 +82,68 @@
             </div> 
         </div>                       
     </section>
-    <section class="container help__section">
+    <section class="container-fluid help__section">
         <div class="row help__section_content">            
             <div class="col-md-3 col-xs-3 text-center mx-auto mt-5 pt-5">
                 <button class="btn" type="button">We're here to help.</button>
             </div>               
         </div>
     </section>
-    <section class="container client__section">
-        <div class="row client__section_content">             
+    <section class="container-fluid client__section">        
+        <div class="row client__section_content">
             <div class="col-md-12 col-xs-12 text-center pt-5">
                 <h3 class="display3">Our clients</h3>
             </div>
-            <div class="col-md-12 col-xs-12 mx-auto my-5 client__line">                
-            </div> 
-            <div class="col-md-12 col-xs-12 mx-auto d-flex justify-content-between">
-                <div class="col-md-2 col-xs-2">
+            
+            <div class="col-md-12 col-xs-12 mx-auto d-flex justify-content-around"> 
+                <div class="col-md-2 col-xs-2 pt-2">             
                     <a href="#"><img class="img-responsive" src="./icons/logo1.png"></a>
-                </div> 
-                <div class="col-md-2 col-xs-2">
-                    <a href="#"><img class="img-responsive" src="./icons/logo2.png"></a>
-                </div> 
-                <div class="col-md-2 col-xs-2">
-                    <a href="#"><img class="img-responsive" src="./icons/logo3.png"></a>
-                </div>  
-                <div class="col-md-2 col-xs-2">
-                    <a href="#"><img class="img-responsive" src="./icons/logo4.png"></a>
                 </div>
-                <div class="col-md-2 col-xs-2">
-                    <a href="#"><img class="img-responsive" src="./icons/logo5.png"></a>
+                <div class="col-md-2 col-xs-2 pt-2"> 
+                    <a href="#"><img class="img-responsive" src="./icons/logo2.png"></a>
+                </div>
+                <div class="col-md-2 col-xs-2 pt-2">             
+                    <a href="#"><img class="img-responsive" src="./icons/logo3.png"></a>
                 </div> 
+                <div class="col-md-2 col-xs-2 pt-2">            
+                    <a href="#"><img class="img-responsive" src="./icons/logo4.png"></a>
+                </div> 
+                <div class="col-md-2 col-xs-2 pt-2">    
+                    <a href="#"><img class="img-responsive" src="./icons/logo5.png"></a>
+                </div>            
             </div>                                    
         </div>
-    </section>  
+    </section> 
+    <section class="container-fluid about__section">        
+        <div class="row my-5 about__section_content">
+            <div class="col-md-12 col-xs-12 text-center pt-5">
+                <h3 class="display3">About us</h3>
+            </div>
+            <div class="col-md-12 col-xs-12 mx-auto my-4 about__line">                    
+            </div>
+            <div class="col-md-6 col-xs-6 text-center mx-auto">
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>                    
+            </div> 
+        </div>  
+        <div class="row about-us__section_content"> 
+            <div class="col-md-3 col-xs-3">
+                <img src="./images/John.png" alt="john">
+            </div>
+            <div class="col-md-3 col-xs-3">
+                <img src="./images/Nora.png" alt="john">
+            </div>
+            <div class="col-md-3 col-xs-3">
+                <img src="./images/Alice.png" alt="john">
+            </div>
+            <div class="col-md-3 col-xs-3">
+                <span class="display4">We are hiring</span>
+                <div class="col-md-12 col-xs-12 mx-auto my-4 about__line">                    
+                </div>
+                <button class="btn__apply">Apply</button>
+            </div>
+                
+        </div>              
+    </section> 
         
 </body>
 </html>
