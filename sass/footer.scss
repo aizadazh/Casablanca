@@ -1,0 +1,14 @@
+.footer {
+    height: 30vh;
+    background: $line;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .grey-text{
+        color: $bg-greyer;
+    }
+    .red-text{
+        color: $red;
+    }
+}

@@ -3,7 +3,8 @@
     width: auto;   
     .client__section_content{ 
         height: 50vh;     
-        background: $bg-light;          
+        background: $bg-light; 
+        padding: 2rem 0;         
         .display3{
             text-transform: uppercase;
             font-weight: bold;

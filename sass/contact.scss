@@ -1,0 +1,16 @@
+.contact__section{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    .left__section{
+        width: 30vw;
+        height: 70vh;
+        background: $bg-grey;
+    }
+    .right__section{
+        width: 70vw;
+        height: 70vh;
+        background: $bg-greyer;
+
+    }
+}
