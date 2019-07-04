@@ -1,16 +1,92 @@
 .contact__section{
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     .left__section{
-        width: 30vw;
-        height: 70vh;
+        width: 38vw;
+        height: 60vh;
         background: $bg-grey;
+        padding:5rem 0;    
+        padding-left: 8rem;   
+        .display4{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .contact__text{
+            color: $line;
+            max-width: 45%;
+            font-weight: 500;
+            line-height: 200%;
+            font-style: italic;
+        }
+        .social__links{
+            padding-right: 1.2rem;
+        }
     }
+    
     .right__section{
-        width: 70vw;
-        height: 70vh;
+        width: 62vw;
+        height: 60vh;
         background: $bg-greyer;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        .form{
+            width: 80%;
+            .input__area{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 3rem;
+                .input{
+                    background: transparent;
+                    width: 45%;  
+                    border: none;                 
+                    border-bottom: 1.5px solid $grey;
+                    height: 3em; 
+                    padding: 0.5rem 1rem;
+                }
+                input::placeholder{
+                    font-style: italic;
+                }
+            }
+            .textarea__area{
+                width: 100%;
+                .textarea {
+                    width:100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1.5px solid $grey;
+                    height: 3em; 
+                    padding: 0.5rem 1rem;
+                    color: $form-text;
+                    font-style: italic;
+                    margin-bottom: 1rem;
+                }        
+            }
+            .send{
+                display: flex;
+                justify-content: flex-end;
+                .send__button{
+                    color: $line;
+                    font-style: bold;
+                    width: 8em;
+                    height: 2.5em;
+                    border: 1.5px solid $line;
+                    border-radius: 2px;
+                    
+                }           
+               
+            }
+                   
+        }             
     }
-}
+}   
+        
+        
+    
+
+    
+
+
+    
