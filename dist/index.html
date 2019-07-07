@@ -7,6 +7,8 @@
     <title>Casablanca</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./slick/slick-theme.css"> 
+    <link rel="stylesheet" href="./slick/slick.css">
 </head>
 <body>                   
     <section class="container-fluid welcome__section">         
@@ -148,7 +150,7 @@
     </section> 
     <section class="container-fluid choice__section">        
         <div class="row choice__section_content">
-            <div class="col-md-12 col-xs-12 text-center pt-5">
+            <div class="col-md-12 col-xs-12">
                 <h3 class="display3">Why choose us</h3>
             </div>
             <div class="col-md-12 col-xs-12 mx-auto my-4 choice__line">                    
@@ -157,10 +159,39 @@
                 <p class="choice__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>                    
             </div> 
         </div>  
-        <div class="row slider text-center"> 
-            <div class="col-md-12 col-sm-12">
-                <img src="./images/Slide 1.png" alt="slider">
-            </div>                       
+        <div class="slider__multiple-item">
+            <div class="slider__section">
+                <div class="slider-box">
+                    <img class="i-phone" src="../dist/images/iPhone 5c.png" />
+                </div>
+                <h5 class="display5">App design</h5>
+                <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    ilabore et dolore.</span> 
+            </div>           
+            <div class="slider__section">
+                <div class="slider-box">
+                    <img class="i-pad" src="../dist/images/iPad Air.png" />
+                </div>
+                <h5 class="display5">Responsive Layout</h5>
+                <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    ilabore et dolore.</span>
+            </div>
+            <div class="slider__section">
+                <div class="slider-box">
+                    <img class="macbook" src="../dist/images/Macbook Pro.png" />
+                </div>
+                <h5 class="display5">Pixel Perfict Design</h5>
+                <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    ilabore et dolore.</span>
+            </div>  
+            <div class="slider__section">
+                <div class="slider-box">
+                    <img class="i-phone" src="../dist/images/iPhone 5c.png" />
+                </div>
+                <h5 class="display5">App design</h5>
+                <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    ilabore et dolore.</span> 
+            </div>                      
         </div>              
     </section>
     <section class="container-fluid quote__section">
@@ -184,13 +215,13 @@
     </section>
     <section class="container-fluid contact__section">
         <div class="row left__section">
-            <div class="col-md-12 col-xs-12 text-left">
+            <div class="col-lg-12 col-md-6 col-sm-4 text-left"> 
                 <h4 class="display4">Our location</h4>
             </div>
-            <div class="col-md-12 col-xs-12 text-left">
+            <div class="col-lg-12 col-md-6 col-sm-4 text-left">
                 <p class="contact__text">174 Mimosa ST. NW Casablanca, MA 20370 (212) 123 456 7 Samir Timezguida</p>
             </div>
-            <div>
+            <div class="col-lg-12 col-md-6 col-sm-4">
                 <a href="/"><img class="social__links" src="./icons/twitter.png" alt="twitter"></a>
                 <a href="/"><img class="social__links" src="./icons/fb.png" alt="fb"></a>
                 <a href="/"><img class="social__links" src="./icons/in.png" alt="in"></a>
@@ -217,16 +248,48 @@
     </section>
     <footer class="container-fluid footer">
         <div class="row d-flex justify-content-center text-center">
-            <img src="./images/Logo-footer.png" alt="logo">
+            <div class="col-lg-12 col-md-6 col-sm-4">
+                <img src="./images/Logo-footer.png" alt="logo">
+            </div>
         </div>
         <div class="row d-flex justify-content-center">
-            <span class="grey-text">2014 ©</span>
-            <br />
-            <span class="red-text">Samir Timezguida.</span>
-            <br /> 
-            <span class="grey-text">All Rights Reserved.</span>
+            <div class="col-lg-12 col-md-6 col-sm-4">
+                <span class="grey-text">2014 ©</span>                
+                <span class="red-text pl-1">Samir Timezguida.</span>               
+                <span class="grey-text pl-1">All Rights Reserved.</span>
+            </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider__multiple-item').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+                {
+                breakpoint: 758,
+                settings: {
+                    slidesToShow: 2,
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+                }
+            ]
+        });
+    });
+      </script>
 
 </body>
 </html>
