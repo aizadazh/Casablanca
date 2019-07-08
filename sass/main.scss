@@ -1,3 +1,31 @@
+.welcome__section{
+    height: 100vh;
+    width:auto;
+    background: url("../images/hero.png") no-repeat;
+    background-size: cover;
+    opacity: 0.9; 
+    .welcome__section_content{
+        display:flex;
+        flex-direction: column;
+        align-content: space-between;   
+        .display1{
+            color:$white;                             
+            text-transform: uppercase;          
+        }    
+        .welcome__line{        
+            width:4rem;
+            border-bottom: 2px solid $white;            
+        }
+        .welcome__text {
+            color: $white;           
+        }
+        .mouse-scroll{
+            width: 1em;
+            height:auto;    
+        }
+    }
+}
+
 .intro__section{
     height: 100vh;
     width: auto;
