@@ -1,92 +1,130 @@
 .welcome__section{
-    height: 100vh;
-    width:auto;
+    height: 100vh;    
     background: url("../images/hero.png") no-repeat;
     background-size: cover;
     opacity: 0.9; 
     .welcome__section_content{
         display:flex;
         flex-direction: column;
-        align-content: space-between;   
+        align-items: center;        
+        position: relative;
         .display1{
             color:$white;                             
-            text-transform: uppercase;          
+            text-transform: uppercase; 
+            font-family: $font_title; 
+            font-size: 1.5rem; 
+            padding-top: 8em;  
+            text-align: center;     
         }    
         .welcome__line{        
             width:4rem;
-            border-bottom: 2px solid $white;            
+            border-bottom: 2px solid $white; 
+            padding-top: 2em;                  
         }
         .welcome__text {
-            color: $white;           
+            color: $white; 
+            font-size: 1.2em;
+            max-width: 50%;    
+            text-align: center; 
+            padding-top: 2em; 
+            padding-bottom:5rem;        
         }
         .mouse-scroll{
-            width: 1em;
-            height:auto;    
+            width: 1.3em;
+            height:auto; 
+            position: absolute;
+            top: 120%;   
         }
     }
 }
-
 .intro__section{
-    height: 100vh;
-    width: auto;
-    .intro__section_content{        
+    height: 100vh;    
+    .intro__section_content{ 
+        height: auto;       
         display: flex;
         flex-direction: column;
-        align-content: space-between;    
-        .display3{
-            text-transform: uppercase;
-            font-weight: bold;
+        align-content: space-between; 
+        align-items: center;     
+        .display2{
+            color:$line;                             
+            text-transform: uppercase; 
+            font-family: $font_title; 
+            font-size: 1.2rem; 
+            padding-top: 5rem;  
+            text-align: center;            
         }
         .intro__line{
             width: 4rem;
-            border-bottom: 2px solid $line;             
+            border-bottom: 2px solid $line;  
+            padding-top: 2.2em;               
         }
         .intro__text {
-            color: $line;
+            color: $line;           
+            font-size: 1em;
+            max-width: 58%;    
+            text-align: center; 
+            padding-top: 2em;  
+            padding-bottom: 5rem;
         }
     }
     .creativity__section_content{
         height: 50vh;
         background:url("../images/creativity.png") no-repeat;
         background-size: cover;
+        position: relative;
         .btn{
             color: $white;
             font-weight: bold;
+            font-size: 1em;
             border: 1px solid $white;
             border-radius: 2px;
-            width: 13em;
-            height: 3em;
-            background: transparent;           
+            width: 15em;
+            height: 3.5em;
+            background: transparent; 
+            position: absolute;
+            left: 40%;  
+            top:45%;                  
             cursor: pointer;
             &:hover{
                 background: $white;
                 color: $line;
-                border: 1px solid $line;
+                border: 1px solid $white;
             }
         }
     }
 }
 .work__section{
-    height: auto;
-    width: auto;
+    height: 100%;   
     .work__section_content{        
         display: flex;
         flex-direction: column;
-        align-content: space-between;    
-        .display3{
-            text-transform: uppercase;
-            font-weight: bold;
+        align-content: space-between;
+        align-items: center;
+        .display2{
+            color:$line;                             
+            text-transform: uppercase; 
+            font-family: $font_title; 
+            font-size: 1.2rem; 
+            padding-top: 5rem;  
+            text-align: center;            
         }
         .work__line{
             width: 4rem;
-            border-bottom: 2px solid $line;             
+            border-bottom: 2px solid $line;  
+            padding-top: 2.2em;             
         }
         ul {
-            li{                
+            display:flex; 
+            padding-top: 2em;
+            padding-bottom: 2em;
+
+            li{
+                list-style-type: none;
+                width: 8em;                
                 & a{
                     text-transform: uppercase;
                     color: $grey;
-                    font-weight: 400;
+                    font-weight: 500;
                     &:hover{
                         color: $line;
                     }
@@ -94,26 +132,33 @@
             }           
         }
     .work__section_images{        
-        display: flex;       
-        justify-content: space-between; 
-        .btn{
-            color: $line;
-            font-weight: bold;
-            border: 1px solid $line;
-            border-radius: 2px;
-            width: 23em;
-            height: 3em;
-            background: transparent;           
-            cursor: pointer;
-            &:hover{
-                background: $line;
-                color: $white;
-                border: 1px solid $white;
-
-            }
-        }   
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2vw;
+        .img{
+            width: 18em;
+            height: auto;
+        }
+    } 
+    .btn__show{
+        color: $line;
+        font-weight: bold;
+        border: 1px solid $line;
+        border-radius: 2px;
+        width: 21em;
+        height: 3em;
+        background: transparent;           
+        cursor: pointer;
+        margin-top:3em;
+        margin-bottom: 3em;
+        &:hover{
+            background: $line;
+            color: $white;
+            border: 1px solid $white;
+        }
+    } 
     }
-}
 }
 .help__section{
     height: 50vh;

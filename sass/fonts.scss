@@ -1,15 +1,13 @@
 @font-face {
-    font-family: 'Amble';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../dist/fonts/Amble/Amble-Regular.ttf'); 
-   
-        
-  }
+  font-family: "Amble-Regular";
+  src: url("../fonts/Amble/Amble-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
 @font-face {
-    font-family: 'BigJohn';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../dist/fonts/BigJohn/BIG\ JOHN.otf'); 
-   
+  font-family: "BigJohn";
+  src: url("../fonts/BigJohn/BIG JOHN.otf");
+  font-style: normal;
+  font-weight: normal;
 }
