@@ -44,54 +44,14 @@
         display: flex;
         flex-direction: column;
         align-content: space-between; 
-        align-items: center;     
-        .display2{
-            color:$line;                             
-            text-transform: uppercase; 
-            font-family: $font_title; 
-            font-size: 1.2rem; 
-            padding-top: 5rem;  
-            text-align: center;            
-        }
-        .intro__line{
-            width: 4rem;
-            border-bottom: 2px solid $line;  
-            padding-top: 2.2em;               
-        }
-        .intro__text {
-            color: $line;           
-            font-size: 1em;
-            max-width: 58%;    
-            text-align: center; 
-            padding-top: 2em;  
-            padding-bottom: 5rem;
-        }
+        align-items: center;       
     }
     .creativity__section_content{
         height: 50vh;
         background:url("../images/creativity.png") no-repeat;
         background-size: cover;
         position: relative;
-        .btn{
-            color: $white;
-            font-weight: bold;
-            font-size: 1em;
-            border: 1px solid $white;
-            border-radius: 2px;
-            width: 15em;
-            height: 3.5em;
-            background: transparent; 
-            position: absolute;
-            left: 40%;  
-            top:45%;                  
-            cursor: pointer;
-            &:hover{
-                background: $white;
-                color: $line;
-                border: 1px solid $white;
-            }
-        }
-    }
+    }   
 }
 .work__section{
     height: 100%;   
@@ -141,23 +101,7 @@
             height: auto;
         }
     } 
-    .btn__show{
-        color: $line;
-        font-weight: bold;
-        border: 1px solid $line;
-        border-radius: 2px;
-        width: 21em;
-        height: 3em;
-        background: transparent;           
-        cursor: pointer;
-        margin-top:3em;
-        margin-bottom: 3em;
-        &:hover{
-            background: $line;
-            color: $white;
-            border: 1px solid $white;
-        }
-    } 
+   
     }
 }
 .help__section{
@@ -166,151 +110,112 @@
     .help__section_content{
         height: 50vh;
         background: url("../images/client.png") no-repeat;
-        background-size: cover;              
-        .btn{
-            color: $white;
-            font-weight: bold;
-            border: 1px solid $white;
-            border-radius: 2px;
-            width: 13em;
-            height: 3em;
-            background: transparent;           
-            cursor: pointer;
-            &:hover{
-                background: $white;
-                color: $line;
-                border: 1px solid $line;
-            }
-        }
+        background-size: cover;
+        position: relative;        
     }    
 }
 .client__section{
-    height: 50vh;
-    width: auto;   
-    .client__section_content{ 
-        height: 50vh;     
+    height: auto;  
+    .client__section_content{          
         background: $bg-light; 
-        padding: 2rem 0;         
-        .display3{
-            text-transform: uppercase;
-            font-weight: bold;
-            }
-        .client__line{
-            width: 4rem;
-            border-bottom: 2px solid $line;             
-            }   
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        .logo-section{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 1rem;
+        }       
     }   
 }
 .about__section{
-    height: 100vh;
-    width: auto;
+    height: auto;   
     .about__section_content{
         display: flex;
         flex-direction: column;
-        align-content: space-between;    
-        .display3{
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        .about__line{
-            width: 4rem;
-            border-bottom: 2px solid $line;             
-        }
-        .about__text {
-            color: $line;
-        }
-    }
-    .about-us__section_content {
-        display:flex;        
-        justify-content: space-around;
+        align-items: center;  
+        align-content: space-between; 
+    }        
+    .our-employees{
+        display: grid;        
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 1em;  
+        padding-bottom: 3rem;        
         .display4{
             text-transform: uppercase;
-            font-weight: bold;
-            font-size: 1.5em;            
-        }
-        .line {
-            width: 4rem;
-            border-bottom: 2px solid $line;  
+            font-weight: 400;
+            font-size: 1.5em; 
+            font-family: $font_title;           
         }
         .last-box{
             display:flex;
             border: 1px solid $line;          
             height: 22.5em;
-            width:16.8em;
+            width: 16em;
             flex-direction: column;
             justify-content: center;
             align-items: center;            
         }
-        .btn__apply{
-            color: $line;
-            font-weight: bold;
-            border: 1px solid $line;
-            border-radius: 2px;
-            width: 10em;
-            height: 3em;
-            background: transparent;           
-            cursor: pointer;
-            &:hover{
-                background: $line;
-                color: $white;
-                border: 1px solid $white;
-            }
-        }
     }
 }
+.video__section {
+    height: 50vh;
+    width: auto;
+    .video__section_content{
+        height: 50vh;
+        background: url("../images/video.png") no-repeat;
+        background-size: cover;   
+        position: relative;
+        .play-icon {
+            width: 3em;
+            height: auto;
+            position: absolute;
+            top: 40%;
+            left: 45%;
+        }     
+    }    
+}
+
 .choice__section{
-    height: 100vh;
-    width: 100%;
-    padding: 3rem 5rem;
+    height: auto;     
     .choice__section_content{      
         display: flex;
         flex-direction: column;
-        align-content: space-between;    
-        .display3{
-            text-transform: uppercase;
-            font-weight: bold;
-            text-align: center;
-        }
-        .choice__line{
-            width: 4rem;
-            border-bottom: 2px solid $line;             
-        }
-        .choice__text {
-            color: $line;
-        }
+        align-content: space-between; 
+        align-items: center;          
     }
-.slider__multiple-item{
-    display: flex;
-    .slider__section{        
-        display:flex;
-        flex-direction:column;
-        align-content: space-around;        
-        justify-content: center;           
-        .slider-box{
-            width: 20em;
-            height: 9em;                   
-            .i-phone{
-                width: 4em;
-                height: 8em; 
-                
-              
-                          
+    .slider__multiple-item{
+        .slider__section{        
+            display:flex;
+            flex-direction:column;                  
+            justify-content: center;  
+            padding-bottom: 2rem;         
+            .slider-box{
+                width: 20em;
+                height: 9em;
+                position: relative;                  
+                .i-phone{
+                    width: 4em;
+                    height: 8em;  
+                    position: absolute;
+                    left: 45%;                      
+                }
+                .i-pad{
+                    width: 8em;
+                    height: 5em;                      
+                    position: absolute;
+                    left: 40%;
+                    top: 35%;                        
+                }
+                .macbook{
+                    width: 8em;
+                    height: 5em;              
+                    position: absolute;
+                    left: 40%;
+                    top:35%;                           
+                }
             }
-            .i-pad{
-                width: 8em;
-                height: 4em;                
-                margin-top: 4em; 
-               
-                      
-            }
-            .macbook{
-                width: 8em;
-                height: 4em;              
-                margin-top: 4em; 
-              
-                               
-            }
-        }
             .display5{
                 color: $line;
                 padding: 1rem 0;
@@ -325,27 +230,13 @@
     }    
 }
 .quote__section{
-    height: 70vh;
-    width: auto;
-    .quote__section_content{
-        height: 50vh;
+    height: 50vh; 
+    padding-top: 2rem; 
+    .quote__section_content{   
+        height: 50vh;    
         background: url("../images/get.png") no-repeat;
-        background-size: cover;              
-        .btn{
-            color: $white;
-            font-weight: bold;
-            border: 1px solid $white;
-            border-radius: 2px;
-            width: 13em;
-            height: 3em;
-            background: transparent;           
-            cursor: pointer;
-            &:hover{
-                background: $white;
-                color: $line;
-                border: 1px solid $line;
-            }
-        }
+        background-size: cover; 
+        position: relative;      
     }    
 }
 .contact__section{
@@ -360,14 +251,17 @@
         padding-left: 8rem;   
         .display4{
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 400;
+            font-family: $font_title;
+            padding-bottom: 1rem;
         }
         .contact__text{
             color: $line;
-            max-width: 45%;
+            max-width: 60%;
             font-weight: 500;
             line-height: 200%;
             font-style: italic;
+            padding-bottom: 1rem;
         }
         .social__links{
             padding-right: 1.2rem;
@@ -384,6 +278,7 @@
         align-content: center;
         .form{
             width: 80%;
+            padding-left: 3rem;
             .input__area{
                 display: flex;
                 justify-content: space-between;
@@ -418,12 +313,15 @@
                 display: flex;
                 justify-content: flex-end;
                 .send__button{
-                    color: $line;
-                    font-style: bold;
+                    color: $line; 
+                    font-weight: 600;
+                    font-size: 1em;
+                    font-family: $font_main;                   
                     width: 8em;
                     height: 2.5em;
-                    border: 1.5px solid $line;
+                    border: 2px solid $line;
                     border-radius: 2px;
+                    
                     
                 }            
             }                   

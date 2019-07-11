@@ -1,0 +1,56 @@
+.btn{
+    color: $white;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: $font_main;
+    border: 2px solid $white;
+    border-radius: 2px;
+    width: 15em;
+    height: 3.5em;
+    background: transparent; 
+    position: absolute;
+    left: 40%;  
+    top:45%;                  
+    cursor: pointer;
+    &:hover{
+        background: $white;
+        color: $line;
+        border: 1px solid $white;
+    }
+}
+.btn__show{
+    color: $line;
+    font-weight: 600;
+    border: 2px solid $line;
+    border-radius: 2px;
+    width: 21em;
+    height: 3em;
+    background: transparent;           
+    cursor: pointer;
+    margin-top:3em;
+    margin-bottom: 3em;
+    &:hover{
+        background: $line;
+        color: $white;
+        border: 1px solid $white;
+    }
+} 
+
+
+.btn__apply{
+    color: $line;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid $line;
+    border-radius: 2px;
+    width: 10em;
+    height: 3.5em;
+    background: transparent; 
+    margin-top: 2rem;          
+    cursor: pointer;
+    &:hover{
+        background: $line;
+        color: $white;
+        border: 2px solid $white;
+    }
+}

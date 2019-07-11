@@ -12,3 +12,24 @@ a {
     text-decoration: none;
    
 }
+.display2{
+    color:$line;                             
+    text-transform: uppercase; 
+    font-family: $font_title; 
+    font-size: 1.2rem; 
+    padding-top: 5rem;  
+    text-align: center;            
+}
+.dark__line{
+    width: 4rem;
+    border-bottom: 2px solid $line;  
+    padding-top: 2.2em;               
+}
+.info__text {
+    color: $line;           
+    font-size: 1em;
+    max-width: 58%;    
+    text-align: center; 
+    padding-top: 2em;  
+    padding-bottom: 3rem;
+}
