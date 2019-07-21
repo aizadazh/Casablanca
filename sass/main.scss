@@ -33,9 +33,11 @@
             width: 1.3em;
             height:auto; 
             position: absolute;
-            bottom: -50%;   
+            bottom: -10%;   
         }
     }
+  
+
 }
 .intro__section{
     height: 100vh;    
@@ -77,7 +79,6 @@
             display:flex; 
             padding-top: 2em;
             padding-bottom: 2em;
-
             li{
                 list-style-type: none;
                 width: 8em;                
@@ -100,10 +101,10 @@
             width: 18em;
             height: auto;
         }       
-    } 
-   
+     }
     }
 }
+
 .help__section{
     height: 50vh;
     width: auto;
