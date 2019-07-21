@@ -15,25 +15,26 @@
         width: (100% / $column_count)*$i;
     }
 }
-@media (min-width: 576px){
+
+@media only screen and (min-width: 576px){
     .container {
-        width: 540px
+        width: 540px;        
     }
    
-
+   
 }
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
     .container {
-        width: 720px
+        width: 720px;
     }
 }
-@media (min-width: 992px){
+@media only screen and  (min-width: 992px){
     .container {
-        width: 960px
+        width: 960px;
     }
 }
-@media (min-width: 1200px){
+@media only screen and (min-width: 1200px){
     .container {
-        width: 1140px
+        width: 1140px;
     }
 }

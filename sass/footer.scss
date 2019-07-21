@@ -1,14 +1,34 @@
 .footer {
-    height: 30vh;
+    height: 20vh;
     background: $line;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: column;   
     align-items: center;
-    .grey-text{
-        color: $bg-greyer;
+    .footer__logo { 
+       padding-top:2rem;
+        img{
+            width:15em;
+            height: 3em;
+        }   
+    } 
+    .footer__text{
+        text-align: center;            
+        .grey-text{
+            color: $bg-greyer;
+            font-size: 0.8em;
+        }
+        .red-text{
+            color: $red;
+            font-size: 0.8em;
+        }
     }
-    .red-text{
-        color: $red;
+    
+}
+@media (max-width: 576px){
+    .footer{
+        .footer__text {
+            max-width: 10em;
+               
     }
+} 
 }

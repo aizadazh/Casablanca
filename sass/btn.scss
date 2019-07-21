@@ -9,14 +9,15 @@
     height: 3.5em;
     background: transparent; 
     position: absolute;
-    left: 40%;  
+    left: 40%;     
     top:45%;                  
-    cursor: pointer;
+    cursor: pointer;    
     &:hover{
         background: $white;
         color: $line;
         border: 1px solid $white;
-    }
+    
+}   
 }
 .btn__show{
     color: $line;
@@ -53,4 +54,10 @@
         color: $white;
         border: 2px solid $white;
     }
+}
+@media (max-width: 576px){
+    .btn{
+        left: 20%;        
+    }  
+   
 }

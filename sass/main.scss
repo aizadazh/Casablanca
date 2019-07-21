@@ -33,14 +33,13 @@
             width: 1.3em;
             height:auto; 
             position: absolute;
-            bottom: -10%;   
+            bottom: -50%;   
         }
-    }
-  
-
+    }  
 }
+
 .intro__section{
-    height: 100vh;    
+    height: auto;    
     .intro__section_content{ 
         height: auto;       
         display: flex;
@@ -56,20 +55,12 @@
     }   
 }
 .work__section{
-    height: 100%;   
+    height: auto;   
     .work__section_content{        
         display: flex;
         flex-direction: column;
         align-content: space-between;
-        align-items: center;
-        .display2{
-            color:$line;                             
-            text-transform: uppercase; 
-            font-family: $font_title; 
-            font-size: 1.2rem; 
-            padding-top: 5rem;  
-            text-align: center;            
-        }
+        align-items: center;        
         .work__line{
             width: 4rem;
             border-bottom: 2px solid $line;  
@@ -93,10 +84,10 @@
             }           
         }
     .work__section_images{        
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2vw;
+        display: grid;   
+        grid-template-rows: auto auto;    
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
         .img{
             width: 18em;
             height: auto;
@@ -139,10 +130,9 @@
         align-content: space-between; 
     }        
     .our-employees{
-        display: grid;        
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 1em;  
-        padding-bottom: 3rem;        
+        display: flex;        
+        justify-content: space-between;    
+        padding-bottom: 3rem;  
         .display4{
             text-transform: uppercase;
             font-weight: 400;
@@ -240,8 +230,7 @@
         position: relative;      
     }    
 }
-.contact__section{
-    width: 100%;
+.contact__section{    
     height: auto;    
     display: flex;
     .left__section{
@@ -321,11 +310,59 @@
                     width: 8em;
                     height: 2.5em;
                     border: 2px solid $line;
-                    border-radius: 2px;
-                    
-                    
+                    border-radius: 2px;                 
                 }            
             }                   
         }             
     }
-}  
+} 
+@media (max-width: 576px){
+    ul {
+        display:flex; 
+        flex-direction: column;
+        text-align: center;      
+    } 
+    .work__section_images{ 
+        grid-template-rows: auto;           
+        grid-template-columns: 1fr;
+             
+    }
+    .logo-section{        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .our-employees{              
+        flex-direction: column;
+        align-items: center;   
+    }
+    .contact__section{    
+        flex-direction: column;
+    }    
+    .contact__section{ 
+        .left__section{
+            width: 100vw;
+            height: auto;
+    }
+}
+    .contact__section{
+        .right__section{
+        width: 100vw;
+        height: auto;
+        padding: 2rem;
+    } 
+}
+
+.contact__section{
+    .right__section{
+        .form {
+            .send{    
+                justify-content: center;
+                padding-top:1.5rem;
+            }
+        }
+    }
+}
+
+        
+}

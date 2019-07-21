@@ -1,6 +1,6 @@
 .nav {   
     width: 20em;  
-    height: 30em;
+    height: 100%;
     position: fixed;
     top: 0;
     margin-left: 6.5em;    
@@ -179,4 +179,9 @@
     background: transparent;
     -webkit-transition: width 0s ease;
     transition: width 0s ease;
+}
+@media (max-width: 576px){
+    .nav-toggle {
+        left: 8em;     
+    } 
 }
