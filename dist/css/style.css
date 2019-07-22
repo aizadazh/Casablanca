@@ -352,9 +352,9 @@ a {
             color: #222222; }
     .work__section .work__section_content .work__section_images {
       display: grid;
-      grid-template-rows: auto auto;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2em; }
+      grid-template-rows: auto;
+      grid-gap: 1.5em; }
       .work__section .work__section_content .work__section_images .img {
         width: 18em;
         height: auto; }
@@ -431,8 +431,8 @@ a {
   .choice__section .slider__multiple-item .slider__section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding-left: 3rem; }
     .choice__section .slider__multiple-item .slider__section .slider-box {
       width: 20em;
       height: 9em;
@@ -441,26 +441,26 @@ a {
         width: 4em;
         height: 8em;
         position: absolute;
-        left: 45%; }
+        left: 30%; }
       .choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
         width: 8em;
         height: 5em;
         position: absolute;
-        left: 40%;
+        left: 25%;
         top: 35%; }
       .choice__section .slider__multiple-item .slider__section .slider-box .macbook {
         width: 8em;
         height: 5em;
         position: absolute;
-        left: 40%;
+        left: 25%;
         top: 35%; }
     .choice__section .slider__multiple-item .slider__section .display5 {
       color: #222222;
       padding: 1rem 0;
-      text-align: center; }
+      padding-left: 5rem; }
     .choice__section .slider__multiple-item .slider__section .slider-text {
       color: #222222;
-      width: 20em;
+      width: 16em;
       text-align: center; }
 
 .quote__section {
@@ -545,11 +545,13 @@ a {
           border-radius: 2px; }
 
 @media (max-width: 576px) {
+  .welcome__section .welcome__section_content .mouse-scroll {
+    bottom: -20%; }
   ul {
     display: flex;
     flex-direction: column;
     text-align: center; }
-  .work__section_images {
+  .work__section .work__section_content .work__section_images {
     grid-template-rows: auto;
     grid-template-columns: 1fr; }
   .logo-section {
