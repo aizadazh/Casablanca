@@ -54,7 +54,7 @@
         position: relative;
     }   
 }
-.work__section{
+#work__section{
     height: auto;   
     .work__section_content{        
         display: flex;
@@ -96,7 +96,7 @@
     }
 }
 
-.help__section{
+#help__section{
     height: 50vh;
     width: auto;
     .help__section_content{
@@ -106,10 +106,10 @@
         position: relative;        
     }    
 }
-.client__section{
-    height: auto;  
-    .client__section_content{          
-        background: $bg-light; 
+#client__section{
+    height: auto; 
+    background: $bg-light;  
+    .client__section_content{       
         display: flex;
         flex-direction: column;
         align-items: center;       
@@ -138,7 +138,7 @@
         }       
     }   
 }
-.about__section{
+#about__section{
     height: auto;   
     .about__section_content{
         display: flex;
@@ -149,7 +149,51 @@
     .our-employees{
         display: flex;        
         justify-content: space-between;    
-        padding-bottom: 3rem;  
+        padding-bottom: 3rem; 
+        .employee-image{
+            position: relative;
+            .link-icon{
+                position: absolute;
+                display: none;            
+                top: 5%;
+                left: 80%;
+            }
+            .employee-name{
+                position: absolute;
+                display: none;            
+                top: 80%;
+                left: 35%;                
+                span{
+                    color: $white;
+                    font-size: 1em;
+                    font-weight: 500;
+                    font-family: $font_title;                    
+                }                
+            }
+            .employee-position{
+                position: absolute;
+                display: none;            
+                top: 88%;
+                left: 27%;                
+                span{
+                    color: $white;
+                    font-size: 1em;
+                    font-weight: 500;
+                    font-family: $font_main;                    
+                }
+            }
+            &:hover{
+                .link-icon{
+                    display: block;
+                }
+                .employee-name{
+                    display: block;
+                }
+                .employee-position{
+                    display: block;
+                }
+            }
+        }    
         .display4{
             text-transform: uppercase;
             font-weight: 400;
@@ -167,7 +211,7 @@
         }
     }
 }
-.video__section {
+#video__section {
     height: 50vh;
     width: auto;
     .video__section_content{
@@ -185,7 +229,7 @@
     }    
 }
 
-.choice__section{
+#choice__section{
     height: auto;     
     .choice__section_content{      
         display: flex;
@@ -239,7 +283,7 @@
         }
     }    
 }
-.quote__section{
+#quote__section{
     height: 50vh; 
     padding-top: 2rem; 
     .quote__section_content{   
@@ -249,15 +293,14 @@
         position: relative;      
     }    
 }
-.contact__section{    
-    height: auto;    
-    display: flex;
+#contact__section{    
+    height: auto; 
     .contact__section_content{
         display: flex;    
         .left__section{
             width: 38vw;
             min-height: 50vh;
-            max-height: 60vh;
+            max-height: 10em;
             background: $bg-grey;
             padding:5rem 0;    
             padding-left: 8rem;   
@@ -283,7 +326,7 @@
         .right__section{
             width: 62vw;
             min-height: 50vh;
-            max-height: 60vh;
+            max-height: 10em;
             background: $bg-greyer;
             display: flex;
             flex-direction: column;
@@ -354,14 +397,15 @@
         flex-direction: column;
         text-align: center;      
     }
-    .work__section{
-        .work__section_content{
-            .work__section_images{ 
-                grid-template-rows: auto;           
-                grid-template-columns: 1fr;                     
+    #work__section{
+        .container{
+            .work__section_content{
+                .work__section_images{                             
+                    grid-template-columns: 1fr;                     
+                }
             }
         }
-    } 
+    }
     
     .logo-section{        
         display: flex;
@@ -372,12 +416,12 @@
         flex-direction: column;
         align-items: center;   
     }
-    .contact__section{ 
+    #contact__section{ 
         .contact__section_content{   
             flex-direction: column;
         }
     }    
-    .contact__section{ 
+    #contact__section{ 
         .contact__section_content{ 
             .left__section{
                 width: 100vw;
@@ -388,41 +432,41 @@
                     width: 90%;
                 }
             }    
-    }
-}
-.contact__section{ 
-    .contact__section_content{ 
-        .left__section{
-            .contact__text{
-                max-width: 90%;
-            }
         }
-    } 
-}   
+    }
+    #contact__section{ 
+        .contact__section_content{ 
+            .left__section{
+                .contact__text{
+                    max-width: 90%;
+                }
+            }
+        } 
+    }   
             
-.contact__section{
-    .contact__section_content{ 
-        .right__section{
-            width: 100vw;
-            min-height: 50vh;
-            padding: 2rem;
-            text-align: center;
-    } 
-}
-}
+    #contact__section{
+        .contact__section_content{ 
+            .right__section{
+                width: 100vw;
+                min-height: 50vh;
+                padding: 2rem;
+                text-align: center;
+            } 
+        }
+    }
 
-.contact__section{
-    .contact__section_content{ 
-        .right__section{
-            .form {
-                .send{    
-                    justify-content: center;
-                    padding-top:1.5rem;
+    #contact__section{
+        .contact__section_content{ 
+            .right__section{
+                .form {
+                    .send{    
+                        justify-content: center;
+                        padding-top:1.5rem;
+                    }
                 }
             }
         }
     }
-}
 }
 
         

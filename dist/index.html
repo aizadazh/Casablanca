@@ -13,18 +13,23 @@
 </head>
 <body>    
     <div class="container">
-        <input type="checkbox" id="nav-toggle" hidden>   
-        <nav class="nav"> 
-            <label for="nav-toggle" class="nav-toggle" onclick></label>            
-            <ul>
+        <header>
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">   
+            <label class="btn-menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>          
+            <ul class="hidden-menu">
                 <li><a href="#intro__section">Introduction</a>
-                <li><a href="#">Some of our works</a>
-                <li><a href="#">Our clients</a>
-                <li><a href="#">About us</a>
-                <li><a href="#">Why choose us</a>
-                <li><a href="#">Get in touch</a>                 
+                <li><a href="#work__section">Some of our works</a>
+                <li><a href="#help__section">We're here to help</a>
+                <li><a href="#client__section">Our clients</a>
+                <li><a href="#about__section">About us</a>
+                <li><a href="#choice__section">Why choose us</a>
+                <li><a href="#contact__section">Get in touch</a>                 
             </ul>
-        </nav>
+        </header>
     </div>
     <section class="welcome__section"> 
         <div class="container">         
@@ -42,13 +47,13 @@
                 <h2 class="display2">Introduction</h2>                
                 <div class="dark__line"></div>                
                 <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>                    
-            </div>  
-            <div class="creativity__section_content">                
-                <a class="link">Pure Creativity.</a>                
-            </div>
-        </div>                        
+            </div> 
+        </div> 
+        <div class="creativity__section_content">                
+            <a class="link">Pure Creativity.</a>                
+        </div>                                
     </section>
-    <section class="work__section"> 
+    <section id="work__section"> 
         <div class="container">        
             <div class="work__section_content">               
                 <h2 class="display2">Some of our work</h2>                
@@ -63,10 +68,7 @@
                 <div class="work__section_images">                     
                     <a href="#"><img class="img" src="./images/img1.png"></a>          
                     <a href="#"><img class="img" src="./images/img2.png"></a>              
-                    <a href="#"><img class="img" src="./images/img3.png"></a> 
-                </div>
-                
-                <div class="work__section_images">           
+                    <a href="#"><img class="img" src="./images/img3.png"></a>                         
                     <a href="#"><img class="img" src="./images/img4.png"></a>              
                     <a href="#"><img class="img" src="./images/img5.png"></a>               
                     <a href="#"><img class="img" src="./images/img6.png"></a>  
@@ -75,16 +77,14 @@
             </div>
         </div>                       
     </section>
-    <section class="help__section">
-        <div class="container"> 
-            <div class="help__section_content">      
-                <a class="link">We're here to help.</a>                            
-            </div>
-        </div>
+    <section id="help__section">        
+        <div class="help__section_content">      
+            <a class="link">We're here to help.</a>                            
+        </div>       
     </section>
-    <section class="client__section">
-        <div class="container">         
-            <div class="client__section_content">                
+    <section id="client__section">
+        <div class="container">                 
+            <div class="client__section_content">        
                 <h2 class="display2">Our clients</h2>
                 <div class="dark__line"></div>                  
                 <div class="logo-section">                                
@@ -97,7 +97,7 @@
             </div>
         </div>
     </section> 
-    <section class="about__section"> 
+    <section id="about__section"> 
         <div class="container">        
             <div class="about__section_content">
                 <h2 class="display2">About us</h2>                
@@ -105,9 +105,21 @@
                 <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>                    
             </div>            
             <div class="our-employees">
-                <a href="#"><img class="employee-image" src="./images/John.png" alt="john" /></a>               
-                <a href="#"><img class="employee-image" src="./images/Nora.png" alt="john" /></a>           
-                <a href="#"><img class="employee-image" src="./images/Alice.png" alt="john" /></a>               
+                <div class="employee-image"><a href="#"><img  src="./images/John1.png" alt="john" /></a>
+                    <div class="link-icon"><a href="#"><img src="./icons/link.png" alt="link" /></a></div>
+                    <div class="employee-name"><span>John</span></div>
+                    <div class="employee-position"><span >CEO / Founder</span></div>               
+                </div>                            
+                <div class="employee-image"><a href="#"><img src="./images/Nora2.png" alt="nora" /></a> 
+                    <div class="link-icon"><a href="#"><img src="./icons/link.png" alt="link" /></a></div>
+                    <div class="employee-name"><span>Nora</span></div>
+                    <div class="employee-position"><span>Finance Manager</span></div>
+                </div>
+                <div class="employee-image"><a href="#"><img src="./images/Alice2.png" alt="alice" /></a>
+                    <div class="link-icon"><a href="#"><img src="./icons/link.png" alt="link" /></a></div>
+                    <div class="employee-name"><span>Alice</span></div>
+                    <div class="employee-position"><span>HR Manager</span></div>
+                </div>               
                 <div class="last-box">
                     <span class="display4">We are</span>
                     <span class="display4">hiring</span>
@@ -117,14 +129,12 @@
             </div> 
         </div>           
     </section> 
-    <section class="video__section">
-        <div class="container"> 
-            <div class="video__section_content">
-                <a href="#"><img class="play-icon" src="./icons/play.png" alt="play" /></a>
-            </div>
-        </div>
+    <section id="video__section">        
+        <div class="video__section_content">
+            <a href="#"><img class="play-icon" src="./icons/play.png" alt="play" /></a>
+        </div>       
     </section>
-    <section class="choice__section"> 
+    <section id="choice__section"> 
         <div class="container">        
             <div class="choice__section_content">
                 <h2 class="display2">Why choose us</h2>               
@@ -167,14 +177,12 @@
             </div>  
         </div>          
     </section>
-    <section class="quote__section">
-        <div class="container"> 
-            <div class="quote__section_content">               
-                <a class="link">Get a quote now.</a>                               
-            </div>
-        </div>
+    <section id="quote__section">        
+        <div class="quote__section_content">               
+            <a class="link">Get a quote now.</a>                               
+        </div>       
     </section>
-    <section class="choice__section"> 
+    <section id="choice__section"> 
         <div class="container">        
             <div class="choice__section_content">
                 <h2 class="display2">Get in touch</h2>               
@@ -183,7 +191,7 @@
             </div> 
         </div>
     </section>
-    <section class="contact__section">
+    <section id="contact__section">
         <div class="container"> 
             <div class="contact__section_content">
                 <div class="left__section">
