@@ -3,9 +3,9 @@
     height: 100%;
     position: fixed;
     top: 0;
-    margin-left: 6.5em;    
+    margin-left: 7em;    
     left: -15em;    
-    padding: 1rem 1.5rem;   
+    padding: 5rem 1.5rem;   
     -webkit-transition: left 0.3s;
     -moz-transition: left 0.3s;
     transition: left 0.3s;   
@@ -33,12 +33,12 @@
     text-decoration: none;
 }
 .nav-toggle:hover {
-    color: $red;
+    color: $white;
 }
 
 
 [id='nav-toggle']:checked ~ .nav > .nav-toggle {
-    left: auto;
+    left: 2rem;
     right: 2px;
     top: 1em;
 }
@@ -74,13 +74,13 @@
       overflow-x: hidden;
     }
     .nav {
-      width: 100%;
+      width: 90%;
       box-shadow: none
     }
 }
 
 .nav h2 {
-    width: 90%;
+    width: 80%;
     padding: 0;
     margin: 10px 0;
     text-align: center;    
@@ -100,28 +100,6 @@
     padding: 0;
     list-style: none;
 }
-.nav > ul > li {
-    line-height: 2.5;
-    opacity: 0;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
-    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
-    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
-    transition: opacity .5s .1s, transform .5s .1s;
-}
-
-[id='nav-toggle']:checked ~ .nav > ul > li {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-}
-
-
 .nav > ul > li > a {
     display: inline-block;
     position: relative;
@@ -136,12 +114,6 @@
     -moz-transition: color .5s ease, padding .5s ease;
     transition: color .5s ease, padding .5s ease;
 }
-.nav > ul > li > a:hover,
-.nav > ul > li > a:focus {
-    color:$red;
-    padding-left: 1em;
-}
-
 .nav > ul > li > a:before {
     content: '';
     display: block;

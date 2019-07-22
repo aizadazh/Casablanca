@@ -1,5 +1,5 @@
 .welcome__section{
-    height: 100vh;    
+    height: auto;     
     background: url("../images/hero.png") no-repeat;
     background-size: cover;
     opacity: 0.9; 
@@ -27,18 +27,18 @@
             max-width: 50%;    
             text-align: center; 
             padding-top: 2em; 
-            padding-bottom:5rem;        
+            padding-bottom:15em;        
         }
         .mouse-scroll{
             width: 1.3em;
             height:auto; 
-            position: absolute;
-            bottom: -50%;   
+            position: absolute;            
+            bottom: 5%;   
         }
     }  
 }
 
-.intro__section{
+#intro__section{
     height: auto;    
     .intro__section_content{ 
         height: auto;       
@@ -118,6 +118,23 @@
             display: flex;
             justify-content: space-around;
             padding: 3rem 1rem;
+            .company-logos{
+                width: 10em;
+                height: auto;
+                filter: grayscale(100%);
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+            .company-logos4{
+                width: 13em;
+                height: auto;              
+                filter: grayscale(100%);
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+            
         }       
     }   
 }
@@ -235,94 +252,100 @@
 .contact__section{    
     height: auto;    
     display: flex;
-    .left__section{
-        width: 38vw;
-        height: 60vh;
-        background: $bg-grey;
-        padding:5rem 0;    
-        padding-left: 8rem;   
-        .display4{
-            text-transform: uppercase;
-            font-weight: 400;
-            font-family: $font_title;
-            padding-bottom: 1rem;
-        }
-        .contact__text{
-            color: $line;
-            max-width: 60%;
-            font-weight: 500;
-            line-height: 200%;
-            font-style: italic;
-            padding-bottom: 1rem;
-        }
-        .social__links{
-            padding-right: 1.2rem;
-        }
-    }
-    
-    .right__section{
-        width: 62vw;
-        height: 60vh;
-        background: $bg-greyer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        .form{
-            width: 80%;
-            padding-left: 3rem;
-            .input__area{
-                display: flex;
-                justify-content: space-between;
-                padding-bottom: 3rem;
-                .input{
-                    background: transparent;
-                    width: 45%;  
-                    border: none;                 
-                    border-bottom: 1.5px solid $grey;
-                    height: 3em; 
-                    padding: 0.5rem 1rem;
-                }
-                input::placeholder{
-                    font-style: italic;
-                }
+    .contact__section_content{
+        display: flex;    
+        .left__section{
+            width: 38vw;
+            min-height: 50vh;
+            max-height: 60vh;
+            background: $bg-grey;
+            padding:5rem 0;    
+            padding-left: 8rem;   
+            .display4{
+                text-transform: uppercase;
+                font-weight: 400;
+                font-family: $font_title;
+                padding-bottom: 1rem;
             }
-            .textarea__area{
-                width: 100%;
-                .textarea {
-                    width:100%;
-                    background: transparent;
-                    border: none;
-                    border-bottom: 1.5px solid $grey;
-                    height: 3em; 
-                    padding: 0.5rem 1rem;
-                    color: $form-text;
-                    font-style: italic;
-                    margin-bottom: 1rem;
-                }        
+            .contact__text{
+                color: $line;
+                max-width: 60%;
+                font-weight: 500;
+                line-height: 200%;
+                font-style: italic;
+                padding-bottom: 1rem;
             }
-            .send{
-                display: flex;
-                justify-content: flex-end;
-                .send__button{
-                    color: $line; 
-                    font-weight: 600;
-                    font-size: 1em;
-                    font-family: $font_main;                   
-                    width: 8em;
-                    height: 2.5em;
-                    border: 2px solid $line;
-                    border-radius: 2px;                 
-                }            
-            }                   
-        }             
+            .social__links{
+                padding-right: 1.2rem;
+            }
+        }
+        
+        .right__section{
+            width: 62vw;
+            min-height: 50vh;
+            max-height: 60vh;
+            background: $bg-greyer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            .form{
+                width: 80%;
+                padding-left: 3rem;
+                .input__area{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 3rem;
+                    .input{
+                        background: transparent;
+                        width: 45%;  
+                        border: none;                 
+                        border-bottom: 1.5px solid $grey;
+                        height: 3em; 
+                        padding: 0.5rem 1rem;
+                    }
+                    input::placeholder{
+                        font-style: italic;
+                    }
+                }
+                .textarea__area{
+                    width: 100%;
+                    .textarea {
+                        width:100%;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1.5px solid $grey;
+                        height: 3em; 
+                        padding: 0.5rem 1rem;
+                        color: $form-text;
+                        font-style: italic;
+                        margin-bottom: 1rem;
+                    }        
+                }
+                .send{
+                    display: flex;
+                    justify-content: flex-end;
+                    .send__button{
+                        color: $line; 
+                        font-weight: 600;
+                        font-size: 1em;
+                        font-family: $font_main;                   
+                        width: 8em;
+                        height: 2.5em;
+                        border: 2px solid $line;
+                        border-radius: 2px;                 
+                    }            
+                }                   
+            }             
+        }
     }
 } 
 @media (max-width: 576px){
     .welcome__section{
         .welcome__section_content{
-            .mouse-scroll{
-                bottom: -20%;
+            .display1{
+                font-size: 1em;
+                width: 15em;
             }
         }
     }    
@@ -349,33 +372,58 @@
         flex-direction: column;
         align-items: center;   
     }
-    .contact__section{    
-        flex-direction: column;
+    .contact__section{ 
+        .contact__section_content{   
+            flex-direction: column;
+        }
     }    
     .contact__section{ 
-        .left__section{
-            width: 100vw;
-            height: auto;
+        .contact__section_content{ 
+            .left__section{
+                width: 100vw;
+                min-height: 35vh;             
+                text-align: center;
+                padding: 2rem;
+                .contact__text{
+                    width: 90%;
+                }
+            }    
     }
 }
-    .contact__section{
-        .right__section{
-        width: 100vw;
-        height: auto;
-        padding: 2rem;
+.contact__section{ 
+    .contact__section_content{ 
+        .left__section{
+            .contact__text{
+                max-width: 90%;
+            }
+        }
     } 
+}   
+            
+.contact__section{
+    .contact__section_content{ 
+        .right__section{
+            width: 100vw;
+            min-height: 50vh;
+            padding: 2rem;
+            text-align: center;
+    } 
+}
 }
 
 .contact__section{
-    .right__section{
-        .form {
-            .send{    
-                justify-content: center;
-                padding-top:1.5rem;
+    .contact__section_content{ 
+        .right__section{
+            .form {
+                .send{    
+                    justify-content: center;
+                    padding-top:1.5rem;
+                }
             }
         }
     }
 }
+}
 
         
-}
+
