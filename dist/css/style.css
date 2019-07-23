@@ -202,9 +202,13 @@ a {
   padding: 1rem 3rem;
   cursor: pointer; }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .link {
-    left: 20%; } }
+    left: 17%; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .link {
+    left: 35%; } }
 
 .welcome__section {
   height: auto;
@@ -450,9 +454,8 @@ a {
   #contact__section .contact__section_content {
     display: flex; }
     #contact__section .contact__section_content .left__section {
-      width: 38vw;
-      min-height: 50vh;
-      max-height: 10em;
+      width: 35%;
+      height: auto;
       background: #f2f2f2;
       padding: 5rem 0;
       padding-left: 8rem; }
@@ -471,9 +474,7 @@ a {
       #contact__section .contact__section_content .left__section .social__links {
         padding-right: 1.2rem; }
     #contact__section .contact__section_content .right__section {
-      width: 62vw;
-      min-height: 50vh;
-      max-height: 10em;
+      width: 58%;
       background: #e4e4e4;
       display: flex;
       flex-direction: column;
@@ -520,7 +521,7 @@ a {
             border: 2px solid #222222;
             border-radius: 2px; }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .welcome__section .welcome__section_content .display1 {
     font-size: 1em;
     width: 15em; }
@@ -530,11 +531,19 @@ a {
     text-align: center; }
   #work__section .container .work__section_content .work__section_images {
     grid-template-columns: 1fr; }
-  .logo-section {
+  #client__section .client__section_content .logo-section {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .our-employees {
+  #client__section .client__section_content .logo-section .company-logos {
+    width: 7em;
+    height: auto;
+    padding-top: 1.5rem; }
+  #client__section .client__section_content .logo-section .company-logos4 {
+    width: 9em;
+    height: auto;
+    padding-top: 1.5rem; }
+  #about__section .our-employees {
     flex-direction: column;
     align-items: center; }
   #contact__section .contact__section_content {
@@ -555,6 +564,54 @@ a {
     text-align: center; }
   #contact__section .contact__section_content .right__section .form .send {
     justify-content: center;
+    padding-top: 1.5rem; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .welcome__section .welcome__section_content .display1 {
+    font-size: 1.2em;
+    width: 17em; }
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  #work__section .container .work__section_content .work__section_images {
+    grid-template-columns: repeat(2, 1fr); }
+  #client__section .client__section_content .logo-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-items: center; }
+  #client__section .client__section_content .logo-section .company-logos {
+    width: 9em;
+    height: auto;
+    padding-top: 1.5rem; }
+  #client__section .client__section_content .logo-section .company-logos4 {
+    width: 12em;
+    height: auto;
+    padding-top: 1.5rem; }
+  #about__section .our-employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-items: center; }
+  #contact__section .contact__section_content {
+    flex-direction: row; }
+  #contact__section .contact__section_content .left__section {
+    width: 45vw;
+    min-height: 35vh;
+    text-align: left;
+    padding: 2rem; }
+  #contact__section .contact__section_content .left__section .contact__text {
+    max-width: 90%; }
+  #contact__section .contact__section_content .right__section {
+    width: 55vw;
+    min-height: 35vh;
+    padding: 2rem;
+    text-align: center; }
+  #contact__section .contact__section_content .right__section .form .send {
+    justify-content: flex-end;
     padding-top: 1.5rem; } }
 
 .btn {

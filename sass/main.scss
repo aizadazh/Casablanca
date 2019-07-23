@@ -298,11 +298,10 @@
     .contact__section_content{
         display: flex;    
         .left__section{
-            width: 38vw;
-            min-height: 50vh;
-            max-height: 10em;
+            width: 35%;
+            height: auto;
             background: $bg-grey;
-            padding:5rem 0;    
+            padding: 5rem 0;    
             padding-left: 8rem;   
             .display4{
                 text-transform: uppercase;
@@ -324,9 +323,7 @@
         }
         
         .right__section{
-            width: 62vw;
-            min-height: 50vh;
-            max-height: 10em;
+            width: 58%;
             background: $bg-greyer;
             display: flex;
             flex-direction: column;
@@ -383,7 +380,7 @@
         }
     }
 } 
-@media (max-width: 576px){
+@media (min-width: 320px) and (max-width: 576px){
     .welcome__section{
         .welcome__section_content{
             .display1{
@@ -406,15 +403,36 @@
             }
         }
     }
-    
-    .logo-section{        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #client__section{
+        .client__section_content{
+            .logo-section{        
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    #client__section{
+        .client__section_content{
+            .logo-section{        
+                .company-logos{
+                    width: 7em;
+                    height: auto;
+                    padding-top: 1.5rem;
+                }
+                .company-logos4{
+                    width: 9em;
+                    height: auto;
+                    padding-top: 1.5rem;
+                }
+            }
     } 
-    .our-employees{              
-        flex-direction: column;
-        align-items: center;   
+}
+    #about__section{
+        .our-employees{              
+            flex-direction: column;
+            align-items: center;   
+        }
     }
     #contact__section{ 
         .contact__section_content{   
@@ -461,6 +479,118 @@
                 .form {
                     .send{    
                         justify-content: center;
+                        padding-top:1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    .welcome__section{
+        .welcome__section_content{
+            .display1{
+                font-size: 1.2em;
+                width: 17em;
+            }
+        }
+    }    
+    ul {
+        display:flex; 
+        flex-direction: column;
+        text-align: center;      
+    }
+    #work__section{
+        .container{
+            .work__section_content{
+                .work__section_images{                             
+                    grid-template-columns: repeat(2, 1fr);                     
+                }
+            }
+        }
+    }
+    #client__section{
+        .client__section_content{
+            .logo-section{        
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;                
+                grid-template-rows: auto;
+                grid-gap: 2rem;
+                justify-items: center;                
+            }
+        }
+    }
+    #client__section{
+        .client__section_content{
+            .logo-section{        
+                .company-logos{
+                    width: 9em;
+                    height: auto;
+                    padding-top: 1.5rem;
+                    
+                }
+                .company-logos4{
+                    width: 12em;
+                    height: auto;
+                    padding-top: 1.5rem;
+                    
+                }
+            }
+    } 
+}
+    #about__section{
+        .our-employees{              
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 2rem; 
+            justify-items: center;
+    }
+}
+    #contact__section{ 
+        .contact__section_content{   
+            flex-direction: row;
+        }
+    }    
+    #contact__section{ 
+        .contact__section_content{ 
+            .left__section{
+                width: 45vw;
+                min-height: 35vh;             
+                text-align: left;
+                padding: 2rem;
+               
+            }    
+        }
+    }
+    #contact__section{ 
+        .contact__section_content{ 
+            .left__section{
+                .contact__text{
+                    max-width: 90%;
+                }
+            }
+        } 
+    }   
+            
+    #contact__section{
+        .contact__section_content{ 
+            .right__section{
+                width: 55vw;
+                min-height: 35vh;
+                padding: 2rem;
+                text-align: center;
+            } 
+        }
+    }
+
+    #contact__section{
+        .contact__section_content{ 
+            .right__section{
+                .form {
+                    .send{    
+                        justify-content: flex-end;
                         padding-top:1.5rem;
                     }
                 }

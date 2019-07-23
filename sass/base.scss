@@ -57,9 +57,13 @@ a {
     cursor: pointer;
      
 } 
-@media(max-width:576px){
+@media (min-width: 320px) and (max-width:576px){
     .link{
-        left: 20%;
-       
+        left: 17%;       
+    }
+} 
+@media (min-width: 577px) and (max-width:768px){
+    .link{
+        left: 35%;       
     }
 }  
