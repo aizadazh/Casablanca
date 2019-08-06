@@ -76,7 +76,7 @@
 @media (min-width: 320px) and (max-width: 576px) {
   .welcome__section .welcome__section_content .display1 {
     font-size: 1em;
-    width: 15em; }
+    width: 10em; }
   ul {
     display: flex;
     flex-direction: column;
@@ -99,9 +99,13 @@
     width: 9em;
     height: auto;
     padding-top: 1.5rem; }
-  #about__section .our-employees {
-    flex-direction: column;
-    align-items: center; }
+  #about__section .container .our-employees {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    text-align: center; }
+  #about__section .container .last-box {
+    margin: 0 auto; }
   #contact__section .container .contact__section_content {
     flex-direction: column; }
     #contact__section .container .contact__section_content .left__section {
@@ -432,16 +436,23 @@ a {
     align-items: center;
     align-content: space-between; }
   #about__section .our-employees {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
     padding-bottom: 3rem; }
     #about__section .our-employees .employee-image {
       position: relative; }
+      #about__section .our-employees .employee-image .img {
+        width: 13em;
+        height: auto;
+        border: 5px solid transparent; }
+        #about__section .our-employees .employee-image .img:hover {
+          border: 5px solid black; }
       #about__section .our-employees .employee-image .link-icon {
         position: absolute;
         display: none;
         top: 5%;
-        left: 80%; }
+        left: 70%; }
       #about__section .our-employees .employee-image .employee-name {
         position: absolute;
         display: none;
@@ -462,12 +473,14 @@ a {
           font-size: 1em;
           font-weight: 500;
           font-family: "Amble-Regular"; }
-      #about__section .our-employees .employee-image:hover .link-icon {
-        display: block; }
-      #about__section .our-employees .employee-image:hover .employee-name {
-        display: block; }
-      #about__section .our-employees .employee-image:hover .employee-position {
-        display: block; }
+      #about__section .our-employees .employee-image:hover {
+        filter: grayscale(100%); }
+        #about__section .our-employees .employee-image:hover .link-icon {
+          display: block; }
+        #about__section .our-employees .employee-image:hover .employee-name {
+          display: block; }
+        #about__section .our-employees .employee-image:hover .employee-position {
+          display: block; }
     #about__section .our-employees .display4 {
       text-transform: uppercase;
       font-weight: 400;
@@ -476,8 +489,8 @@ a {
     #about__section .our-employees .last-box {
       display: flex;
       border: 1px solid #222222;
-      height: 22.5em;
-      width: 16em;
+      height: 17em;
+      width: 12em;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
@@ -495,7 +508,7 @@ a {
       height: auto;
       position: absolute;
       top: 40%;
-      left: 45%; }
+      left: 48%; }
 
 #choice__section {
   height: auto; }
@@ -553,11 +566,11 @@ a {
   #contact__section .contact__section_content {
     display: flex; }
     #contact__section .contact__section_content .left__section {
-      width: 35%;
+      width: 38%;
       height: auto;
       background: #f2f2f2;
-      padding: 5rem 0;
-      padding-left: 8rem; }
+      padding: 2rem 0;
+      padding-left: 7rem; }
       #contact__section .contact__section_content .left__section .display4 {
         text-transform: uppercase;
         font-weight: 400;
@@ -573,14 +586,14 @@ a {
       #contact__section .contact__section_content .left__section .social__links {
         padding-right: 1.2rem; }
     #contact__section .contact__section_content .right__section {
-      width: 58%;
+      width: 62%;
       background: #e4e4e4;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center; }
       #contact__section .contact__section_content .right__section .form {
-        width: 80%;
+        width: 90%;
         padding-left: 3rem; }
         #contact__section .contact__section_content .right__section .form .input__area {
           display: flex;
@@ -663,8 +676,8 @@ a {
   font-size: 1em;
   border: 2px solid #222222;
   border-radius: 2px;
-  width: 10em;
-  height: 3.5em;
+  width: 7em;
+  height: 2.6em;
   background: transparent;
   margin-top: 2rem;
   cursor: pointer; }
