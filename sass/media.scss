@@ -6,26 +6,47 @@
                 width: 10em;
             }
         }
-    }    
-    ul {
-        display:flex; 
-        flex-direction: column;
-        text-align: left;            
+    }
+    #intro__section{ 
+        .container{       
+            .creativity__section_content{            
+                position: relative;
+                .link {
+                    position:absolute;
+                    top: 35%;
+                    left: 20%;
+                }
+            }
+        }
     }
     #work__section{
         .container{
             .work__section_content{
                 .navbar{
+                    flex-direction: column;
                     text-align: center;
                     .nav-item{
-                        padding-bottom: 1.2rem;
+                        padding-bottom: 1rem;
                     }
                 }
                 .work__section_images{                             
-                    grid-template-columns: 1fr;                     
+                    grid-template-columns: 1fr;
+                    .img{
+                        width: 14em;
+                        height: auto;
+                    }                     
                 }
             }
         }
+    }
+    #help__section{        
+        .help__section_content{     
+            .link {
+                position:absolute;
+                top: 35%;
+                left: 20%;
+            }
+        }        
     }
     #client__section{
         .client__section_content{
@@ -65,6 +86,15 @@
             }
         }
     }
+    #quote__section{        
+        .quote__section_content{        
+            .link {
+                position:absolute;
+                top: 35%;
+                left: 20%;
+            }             
+    }
+}
     #contact__section{ 
         .container{
             .contact__section_content{   
@@ -78,8 +108,7 @@
                     }                    
                 }
                 .right__section{
-                    width: 100vw;
-                    min-height: 50vh;
+                    width: 100%;                    
                     padding: 2rem;
                     text-align: center;
                     .form {
@@ -99,10 +128,7 @@
             }
         }
     } 
-}   
-     
-            
-      
+}     
 @media (min-width: 577px) and (max-width: 768px){
     .welcome__section{
         .welcome__section_content{
@@ -111,21 +137,27 @@
                 width: 17em;
             }
         }
-    }    
-    ul {
-        display:flex; 
-        flex-direction: column;
-        text-align: right;      
-    }
+    }      
     #work__section{
         .container{
             .work__section_content{
-                .work__section_images{                             
-                    grid-template-columns: repeat(2, 1fr);                     
+                .navbar {
+                    flex-direction:column;
+                    text-align: center;
+                    .nav-item{
+                        padding-bottom: 0.5rem;
+                    }
                 }
+            .work__section_images{                             
+                grid-template-columns: repeat(2, 1fr);
+                .img{
+                    width: 15em;
+                    height: auto;
+                }                     
             }
         }
     }
+}
     #client__section{
         .container {
             .client__section_content{
@@ -133,6 +165,7 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: auto;
+                    justify-items: center;
                     .company-logos{
                         width: 7em;
                         height: auto;
@@ -164,8 +197,7 @@
             .contact__section_content{   
                 flex-direction: column;
                 .left__section{
-                    width: 95vw;
-                    min-height: 20vh;             
+                    width: 100%;                                
                     text-align: center;
                     padding: 2rem;
                     .contact__text{
@@ -173,8 +205,7 @@
                     }                   
                 } 
                 .right__section{
-                    width: 95vw;
-                    min-height: 30vh;
+                    width: 100%;                   
                     padding: 2rem;
                     text-align: center;
                     .form {
@@ -188,6 +219,64 @@
         }
     } 
 }   
+@media (min-width: 769px) and (max-width: 992px){
+    .welcome__section{
+        .welcome__section_content{
+            .display1{
+                font-size: 1.5em;                
+            }
+        }
+    }      
+    #work__section{
+        .container{
+            .work__section_content{
+                
+            .work__section_images{                             
+                grid-template-columns: repeat(3, 1fr);
+                .img{
+                    width: 16em;
+                    height: auto;
+                }                     
+            }
+        }
+    }
+}
+    #client__section{
+        .container {
+            .client__section_content{
+                .logo-section{        
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    justify-items: center;
+                    .company-logos{
+                        width: 7em;
+                        height: auto;
+                        padding-top: 1.5rem;
+                    }
+                    .company-logos4{
+                        width: 9em;
+                        height: auto;
+                        padding-top: 1.5rem;
+                    }
+
+                }
+            }
+        }
+    }   
+    #about__section{
+        .container{
+            .our-employees{              
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-gap: 2rem; 
+                justify-items: center;
+            }
+        }
+    }
+}
+    
      
             
    

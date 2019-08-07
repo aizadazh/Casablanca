@@ -40,30 +40,5 @@ a {
     padding-top: 2em;  
     padding-bottom: 3rem;
 }
-.link{
-    color: $white;
-    font-weight: bold;
-    font-size: 1em;
-    font-family: $font_main;
-    border: 2px solid $white;
-    border-radius: 2px;
-    width: 15em;
-    height: 3.5em;
-    background: transparent; 
-    position: absolute;
-    left: 40%;     
-    top:45%; 
-    padding: 1rem 3rem;                 
-    cursor: pointer;
-     
-} 
-@media (min-width: 320px) and (max-width:576px){
-    .link{
-        left: 17%;       
-    }
-} 
-@media (min-width: 577px) and (max-width:768px){
-    .link{
-        left: 35%;       
-    }
-}  
+ 
+ 

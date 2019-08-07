@@ -47,11 +47,11 @@
 
 @media only screen and (min-width: 576px) {
   .container {
-    width: 540px; } }
+    width: 560px; } }
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 720px; } }
+    width: 740px; } }
 
 @media only screen and (min-width: 992px) {
   .container {
@@ -77,16 +77,26 @@
   .welcome__section .welcome__section_content .display1 {
     font-size: 1em;
     width: 10em; }
-  ul {
-    display: flex;
-    flex-direction: column;
-    text-align: left; }
+  #intro__section .container .creativity__section_content {
+    position: relative; }
+    #intro__section .container .creativity__section_content .link {
+      position: absolute;
+      top: 35%;
+      left: 20%; }
   #work__section .container .work__section_content .navbar {
+    flex-direction: column;
     text-align: center; }
     #work__section .container .work__section_content .navbar .nav-item {
-      padding-bottom: 1.2rem; }
+      padding-bottom: 1rem; }
   #work__section .container .work__section_content .work__section_images {
     grid-template-columns: 1fr; }
+    #work__section .container .work__section_content .work__section_images .img {
+      width: 14em;
+      height: auto; }
+  #help__section .help__section_content .link {
+    position: absolute;
+    top: 35%;
+    left: 20%; }
   #client__section .client__section_content .logo-section {
     display: flex;
     flex-direction: column;
@@ -106,6 +116,10 @@
     text-align: center; }
   #about__section .container .last-box {
     margin: 0 auto; }
+  #quote__section .quote__section_content .link {
+    position: absolute;
+    top: 35%;
+    left: 20%; }
   #contact__section .container .contact__section_content {
     flex-direction: column; }
     #contact__section .container .contact__section_content .left__section {
@@ -115,8 +129,7 @@
       #contact__section .container .contact__section_content .left__section .contact__text {
         max-width: 90%; }
     #contact__section .container .contact__section_content .right__section {
-      width: 100vw;
-      min-height: 50vh;
+      width: 100%;
       padding: 2rem;
       text-align: center; }
       #contact__section .container .contact__section_content .right__section .form .input__area {
@@ -132,16 +145,21 @@
   .welcome__section .welcome__section_content .display1 {
     font-size: 1.2em;
     width: 17em; }
-  ul {
-    display: flex;
+  #work__section .container .work__section_content .navbar {
     flex-direction: column;
-    text-align: right; }
+    text-align: center; }
+    #work__section .container .work__section_content .navbar .nav-item {
+      padding-bottom: 0.5rem; }
   #work__section .container .work__section_content .work__section_images {
     grid-template-columns: repeat(2, 1fr); }
+    #work__section .container .work__section_content .work__section_images .img {
+      width: 15em;
+      height: auto; }
   #client__section .container .client__section_content .logo-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    justify-items: center; }
     #client__section .container .client__section_content .logo-section .company-logos {
       width: 7em;
       height: auto;
@@ -159,20 +177,46 @@
   #contact__section .container .contact__section_content {
     flex-direction: column; }
     #contact__section .container .contact__section_content .left__section {
-      width: 95vw;
-      min-height: 20vh;
+      width: 100%;
       text-align: center;
       padding: 2rem; }
       #contact__section .container .contact__section_content .left__section .contact__text {
         max-width: 90%; }
     #contact__section .container .contact__section_content .right__section {
-      width: 95vw;
-      min-height: 30vh;
+      width: 100%;
       padding: 2rem;
       text-align: center; }
       #contact__section .container .contact__section_content .right__section .form .send {
         justify-content: flex-end;
         padding-top: 1.5rem; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .welcome__section .welcome__section_content .display1 {
+    font-size: 1.5em; }
+  #work__section .container .work__section_content .work__section_images {
+    grid-template-columns: repeat(3, 1fr); }
+    #work__section .container .work__section_content .work__section_images .img {
+      width: 16em;
+      height: auto; }
+  #client__section .container .client__section_content .logo-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center; }
+    #client__section .container .client__section_content .logo-section .company-logos {
+      width: 7em;
+      height: auto;
+      padding-top: 1.5rem; }
+    #client__section .container .client__section_content .logo-section .company-logos4 {
+      width: 9em;
+      height: auto;
+      padding-top: 1.5rem; }
+  #about__section .container .our-employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-items: center; } }
 
 .hidden-menu {
   display: block;
@@ -289,30 +333,6 @@ a {
   padding-top: 2em;
   padding-bottom: 3rem; }
 
-.link {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1em;
-  font-family: "Amble-Regular";
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  width: 15em;
-  height: 3.5em;
-  background: transparent;
-  position: absolute;
-  left: 40%;
-  top: 45%;
-  padding: 1rem 3rem;
-  cursor: pointer; }
-
-@media (min-width: 320px) and (max-width: 576px) {
-  .link {
-    left: 17%; } }
-
-@media (min-width: 577px) and (max-width: 768px) {
-  .link {
-    left: 35%; } }
-
 .welcome__section {
   height: auto;
   background: url("../images/hero.png") no-repeat;
@@ -360,6 +380,19 @@ a {
     background: url("../images/creativity.png") no-repeat;
     background-size: cover;
     position: relative; }
+    #intro__section .creativity__section_content .link {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      color: #ffffff;
+      font-weight: bold;
+      border: 2px solid #ffffff;
+      border-radius: 2px;
+      width: 15em;
+      height: 3.5em;
+      background: transparent;
+      padding: 1rem 3rem;
+      cursor: pointer; }
 
 #work__section {
   height: auto; }
@@ -372,18 +405,18 @@ a {
       width: 4rem;
       border-bottom: 2px solid #222222;
       padding-top: 2.2em; }
-    #work__section .work__section_content ul {
+    #work__section .work__section_content .navbar {
       display: flex;
       padding-top: 2em;
       padding-bottom: 2em; }
-      #work__section .work__section_content ul li {
+      #work__section .work__section_content .navbar li {
         list-style-type: none;
         width: 8em; }
-        #work__section .work__section_content ul li a {
+        #work__section .work__section_content .navbar li a {
           text-transform: uppercase;
           color: #b1afaf;
           font-weight: 500; }
-          #work__section .work__section_content ul li a:hover {
+          #work__section .work__section_content .navbar li a:hover {
             color: #222222; }
     #work__section .work__section_content .work__section_images {
       display: grid;
@@ -402,6 +435,21 @@ a {
     background: url("../images/client.png") no-repeat;
     background-size: cover;
     position: relative; }
+    #help__section .help__section_content .link {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1em;
+      font-family: "Amble-Regular";
+      border: 2px solid #ffffff;
+      border-radius: 2px;
+      width: 15em;
+      height: 3.5em;
+      background: transparent;
+      padding: 1rem 3rem;
+      cursor: pointer; }
 
 #client__section {
   height: auto;
@@ -560,6 +608,21 @@ a {
     background: url("../images/get.png") no-repeat;
     background-size: cover;
     position: relative; }
+    #quote__section .quote__section_content .link {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1em;
+      font-family: "Amble-Regular";
+      border: 2px solid #ffffff;
+      border-radius: 2px;
+      width: 15em;
+      height: 3.5em;
+      background: transparent;
+      padding: 1rem 3rem;
+      cursor: pointer; }
 
 #contact__section {
   height: auto; }
@@ -686,9 +749,10 @@ a {
     color: #ffffff;
     border: 2px solid #ffffff; }
 
-@media (max-width: 576px) {
-  .btn {
-    left: 20%; } }
+@media (min-width: 320px) and (max-width: 576px) {
+  .btn__show {
+    width: 16em;
+    height: 3em; } }
 
 .footer {
   height: 20vh;
