@@ -795,7 +795,8 @@ a {
         width: 15em;
         height: 3em; }
     .footer .footer__content .footer__text {
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 2rem; }
       .footer .footer__content .footer__text .grey-text {
         color: #e4e4e4;
         font-size: 0.8em; }

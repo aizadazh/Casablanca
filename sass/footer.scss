@@ -6,15 +6,15 @@
         flex-direction: column;   
         align-items: center;       
         .footer__logo { 
-        padding-top:2rem;
-            img{
-                width:15em;
-                height: 3em;
-            }   
+            padding-top:2rem;
+                img{
+                    width:15em;
+                    height: 3em;
+                }   
         } 
         .footer__text{
             text-align: center; 
-                  
+            padding-bottom: 2rem;     
             .grey-text{
                 color: $bg-greyer;
                 font-size: 0.8em;
