@@ -7,16 +7,14 @@
             }
         }
     }
-    #intro__section{ 
-        .container{       
-            .creativity__section_content{            
-                position: relative;
-                .link {
-                    position:absolute;
+    #intro__section {
+        .content-wrapper  {               
+            .creativity__section_content{      
+                .link {               
                     top: 35%;
                     left: 20%;
-                }
-            }
+                }  
+            }          
         }
     }
     #work__section{
@@ -39,15 +37,7 @@
             }
         }
     }
-    #help__section{        
-        .help__section_content{     
-            .link {
-                position:absolute;
-                top: 35%;
-                left: 20%;
-            }
-        }        
-    }
+   
     #client__section{
         .client__section_content{
             .logo-section{        
@@ -86,15 +76,6 @@
             }
         }
     }
-    #quote__section{        
-        .quote__section_content{        
-            .link {
-                position:absolute;
-                top: 35%;
-                left: 20%;
-            }             
-    }
-}
     #contact__section{ 
         .container{
             .contact__section_content{   

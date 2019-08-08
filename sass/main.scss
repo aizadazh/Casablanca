@@ -67,6 +67,26 @@
         }
     }   
 }
+@media (min-width: 320px) and (max-width: 480px){
+    #intro__section{
+        .creativity__section_content{
+            .link {
+                top: 35%;
+                left: 15%;
+            }
+        }
+    }        
+} 
+@media (min-width: 481px) and (max-width: 576px){
+    #intro__section{
+        .creativity__section_content{
+            .link {
+                top: 35%;
+                left: 25%;
+            }
+        }
+    }        
+} 
 #work__section{
     height: auto;   
     .work__section_content{        
@@ -133,8 +153,30 @@
             padding: 1rem 3rem;                 
             cursor: pointer;
         }       
-    }    
+    }
 }
+@media (min-width: 320px) and (max-width: 480px){
+    #help__section{
+        .help__section_content{
+            .link {
+                top: 35%;
+                left: 15%;
+            }
+        }
+    }        
+} 
+@media (min-width: 481px) and (max-width: 576px){
+    #help__section{
+        .help__section_content{
+            .link {
+                top: 35%;
+                left: 25%;
+            }
+        }
+    }        
+}   
+
+
 #client__section{
     height: auto; 
     background: $bg-light;  
@@ -268,6 +310,16 @@
         }     
     }    
 }
+@media (min-width: 320px) and (max-width: 480px){
+    #video__section{
+        .video__section_content{
+            .play-icon {
+                top: 35%;
+                left: 43%;
+            }
+        }
+    }        
+}
 #choice__section{
     height: auto;     
     .choice__section_content{      
@@ -346,6 +398,26 @@
             cursor: pointer;
         }      
     }    
+}
+@media (min-width: 320px) and (max-width: 480px){
+    #quote__section{
+        .quote__section_content{
+            .link {
+                top: 35%;
+                left: 15%;
+            }
+        }
+    }        
+}
+@media (min-width: 481px) and (max-width: 576px){
+    #quote__section{
+        .quote__section_content{
+            .link {
+                top: 35%;
+                left: 25%;
+            }
+        }
+    }        
 }
 #contact__section{    
     height: auto; 
