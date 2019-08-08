@@ -57,19 +57,19 @@
                 <h2 class="display2">Some of our work</h2>                
                 <div class="dark__line"></div>
                 <ul class="navbar">
-                    <li class="nav-item"><a class="nav-link" href="#">All</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Branding</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Web design</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Mobile UI</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Illustrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#branding">All</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#webdesign">Branding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#webdesign">Web design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mobileui">Mobile UI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#branding">Illustrations</a></li>
                 </ul>
                 <div class="work__section_images">                     
-                    <a href="#"><img class="img" src="./images/img1.png"></a>          
-                    <a href="#"><img class="img" src="./images/img2.png"></a>              
-                    <a href="#"><img class="img" src="./images/img3.png"></a>                         
-                    <a href="#"><img class="img" src="./images/img4.png"></a>              
-                    <a href="#"><img class="img" src="./images/img5.png"></a>               
-                    <a href="#"><img class="img" src="./images/img6.png"></a>  
+                    <a href="#"><img id="branding" class="img" src="./images/img1.png"></a>          
+                    <a href="#"><img id="branding" class="img" src="./images/img2.png"></a>              
+                    <a href="#"><img id="webdesign" class="img" src="./images/img3.png"></a>                         
+                    <a href="#"><img id="webdesign" class="img" src="./images/img4.png"></a>              
+                    <a href="#"><img id="mobileui" class="img" src="./images/img5.png"></a>               
+                    <a href="#"><img id="mobileui" class="img" src="./images/img6.png"></a>  
                 </div>                    
                 <button class="btn__show" type="button">Show me more</button>                
             </div>
@@ -160,15 +160,15 @@
                     <div class="slider-box">
                         <img class="macbook" src="../dist/images/Macbook Pro.png" />
                     </div>
-                    <h5 class="display5">Pixel Perfict Design</h5>
+                    <h5 class="display5">Pixel Perfect Design</h5>
                     <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         ilabore et dolore.</span>
                 </div>  
                 <div class="slider__section">
                     <div class="slider-box">
-                        <img class="i-pad" src="../dist/images/iPad Air.png" />
+                        <img class="i-phone" src="../dist/images/iPhone 5c.png" />
                     </div>
-                    <h5 class="display5">Responsive Layout</h5>
+                    <h5 class="display5">App design</h5>
                     <span class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         ilabore et dolore.</span>
                 </div>                
@@ -249,6 +249,18 @@
             autoplaySpeed: 2000,
             arrows: false,
             responsive: [
+            {
+                breakpoint: 950,
+                settings: {
+                    slidesToShow: 2,
+                }
+                },
+                {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 2,
+                }
+                },
                 {
                 breakpoint: 758,
                 settings: {
@@ -256,7 +268,19 @@
                 }
                 },
                 {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+                },
+                {
                 breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+                },
+                {
+                breakpoint: 320,
                 settings: {
                     slidesToShow: 1,
                 }

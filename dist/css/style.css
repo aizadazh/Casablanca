@@ -500,7 +500,7 @@ a {
     #about__section .our-employees .employee-image {
       position: relative; }
       #about__section .our-employees .employee-image .img {
-        width: 13em;
+        width: 15em;
         height: auto;
         border: 5px solid transparent; }
         #about__section .our-employees .employee-image .img:hover {
@@ -546,8 +546,8 @@ a {
     #about__section .our-employees .last-box {
       display: flex;
       border: 1px solid #222222;
-      height: 17em;
-      width: 12em;
+      height: 19.5em;
+      width: 15em;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
@@ -565,7 +565,7 @@ a {
       height: auto;
       position: absolute;
       top: 40%;
-      left: 48%; }
+      left: 47%; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   #video__section .video__section_content .play-icon {
@@ -579,40 +579,44 @@ a {
     flex-direction: column;
     align-content: space-between;
     align-items: center; }
-  #choice__section .slider__multiple-item .slider__section {
+  #choice__section .slider__multiple-item {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-    padding-left: 3rem; }
-    #choice__section .slider__multiple-item .slider__section .slider-box {
-      width: 20em;
-      height: 9em;
-      position: relative; }
-      #choice__section .slider__multiple-item .slider__section .slider-box .i-phone {
-        width: 4em;
-        height: 8em;
-        position: absolute;
-        left: 30%; }
-      #choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
-        width: 8em;
-        height: 5em;
-        position: absolute;
-        left: 25%;
-        top: 35%; }
-      #choice__section .slider__multiple-item .slider__section .slider-box .macbook {
-        width: 8em;
-        height: 5em;
-        position: absolute;
-        left: 25%;
-        top: 35%; }
-    #choice__section .slider__multiple-item .slider__section .display5 {
-      color: #222222;
-      padding: 1rem 0;
-      padding-left: 5rem; }
-    #choice__section .slider__multiple-item .slider__section .slider-text {
-      color: #222222;
-      width: 16em;
-      text-align: center; }
+    justify-content: space-between; }
+    #choice__section .slider__multiple-item .slider__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 2rem;
+      padding-left: 2rem; }
+      #choice__section .slider__multiple-item .slider__section .slider-box {
+        width: 20em;
+        height: 9em;
+        position: relative; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .i-phone {
+          width: 4em;
+          height: 8em;
+          position: absolute;
+          left: 25%; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
+          width: 8em;
+          height: 5em;
+          position: absolute;
+          left: 23%;
+          top: 35%; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .macbook {
+          width: 8em;
+          height: 5em;
+          position: absolute;
+          left: 23%;
+          top: 35%; }
+      #choice__section .slider__multiple-item .slider__section .display5 {
+        color: #222222;
+        padding: 1rem 0;
+        padding-left: 5rem; }
+      #choice__section .slider__multiple-item .slider__section .slider-text {
+        color: #222222;
+        width: 16em;
+        text-align: center; }
 
 #quote__section {
   height: 50vh;

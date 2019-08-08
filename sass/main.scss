@@ -225,7 +225,7 @@
         .employee-image{           
             position: relative;
             .img {
-                width: 13em;
+                width: 15em;
                 height: auto;
                 border: 5px solid transparent;
                 &:hover {
@@ -285,11 +285,12 @@
         .last-box{
             display:flex;
             border: 1px solid $line;          
-            height: 17em;
-            width: 12em;
+            height: 19.5em;
+            width: 15em;
             flex-direction: column;
             justify-content: center;
-            align-items: center;            
+            align-items: center; 
+                       
         }
     }
 }
@@ -306,7 +307,7 @@
             height: auto;
             position: absolute;
             top: 40%;
-            left: 48%;
+            left: 47%;
         }     
     }    
 }
@@ -329,34 +330,37 @@
         align-items: center;          
     }
     .slider__multiple-item{
+        display: flex;
+        justify-content: space-between;        
         .slider__section{        
             display:flex;
-            flex-direction:column;     
+            flex-direction:column; 
+            justify-content: center;    
             padding-bottom: 2rem; 
-            padding-left: 3rem;        
+            padding-left: 2rem;  
+                 
             .slider-box{
                 width: 20em;
                 height: 9em;
                 position: relative; 
-                                
                 .i-phone{
                     width: 4em;
                     height: 8em;  
                     position: absolute;
-                    left: 30%;                      
+                    left: 25%;                      
                 }
                 .i-pad{
                     width: 8em;
                     height: 5em;                      
                     position: absolute;
-                    left: 25%;
+                    left: 23%;
                     top: 35%;                        
                 }
                 .macbook{
                     width: 8em;
                     height: 5em;              
                     position: absolute;
-                    left: 25%;
+                    left: 23%;
                     top:35%;                           
                 }
             }
