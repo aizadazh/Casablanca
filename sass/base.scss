@@ -35,11 +35,20 @@ a {
 .info__text {
     color: $line;           
     font-size: 1em;
-    max-width: 58%;    
+    width: 46%;    
     text-align: center; 
     padding-top: 2em;  
     padding-bottom: 3rem;
 }
+.info__text_others {
+    color: $line;           
+    font-size: 1em;
+    width: 50%;    
+    text-align: center; 
+    padding-top: 2em;  
+    padding-bottom: 3rem;
+}
+
 
 
 

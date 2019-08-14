@@ -109,6 +109,43 @@
     text-align: center; }
   #about__section .container .last-box {
     margin: 0 auto; }
+  #choice__section .slider__multiple-item {
+    margin-left: 2rem; }
+    #choice__section .slider__multiple-item .slider__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 2rem;
+      padding-left: 2rem; }
+      #choice__section .slider__multiple-item .slider__section .slider-box {
+        width: 20em;
+        height: 9em;
+        position: relative; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .i-phone {
+          width: 4em;
+          height: 8em;
+          position: absolute;
+          left: 25%; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
+          width: 8em;
+          height: 5em;
+          position: absolute;
+          left: 23%;
+          top: 35%; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .macbook {
+          width: 8em;
+          height: 5em;
+          position: absolute;
+          left: 23%;
+          top: 35%; }
+      #choice__section .slider__multiple-item .slider__section .display5 {
+        color: #222222;
+        padding: 1rem 0;
+        padding-left: 5rem; }
+      #choice__section .slider__multiple-item .slider__section .slider-text {
+        color: #222222;
+        width: 16em;
+        text-align: center; }
   #contact__section .container .contact__section_content {
     flex-direction: column; }
     #contact__section .container .contact__section_content .left__section {
@@ -317,7 +354,15 @@ a {
 .info__text {
   color: #222222;
   font-size: 1em;
-  max-width: 58%;
+  width: 46%;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 3rem; }
+
+.info__text_others {
+  color: #222222;
+  font-size: 1em;
+  width: 50%;
   text-align: center;
   padding-top: 2em;
   padding-bottom: 3rem; }
@@ -372,16 +417,25 @@ a {
     #intro__section .creativity__section_content .link {
       position: absolute;
       top: 40%;
-      left: 40%;
+      left: 37.5%;
       color: #ffffff;
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 1.2em;
       border: 2px solid #ffffff;
+      letter-spacing: 1px;
       border-radius: 2px;
-      width: 15em;
+      width: 16em;
       height: 3.5em;
       background: transparent;
-      padding: 1rem 3rem;
+      text-align: center;
+      display: block;
+      font-family: "Amble-Regular";
+      padding-top: 1em;
       cursor: pointer; }
+      #intro__section .creativity__section_content .link:hover {
+        color: #222222;
+        border: 2px solid #ffffff;
+        background: #ffffff; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   #intro__section .creativity__section_content .link {
@@ -390,8 +444,18 @@ a {
 
 @media (min-width: 481px) and (max-width: 576px) {
   #intro__section .creativity__section_content .link {
-    top: 35%;
+    top: 36.3%;
     left: 25%; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #intro__section .creativity__section_content .link {
+    top: 37.6%;
+    left: 28%; } }
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  #intro__section .creativity__section_content .link {
+    top: 38.4%;
+    left: 34%; } }
 
 #work__section {
   height: auto; }
@@ -414,7 +478,7 @@ a {
         #work__section .work__section_content .navbar li a {
           text-transform: uppercase;
           color: #b1afaf;
-          font-weight: 500; }
+          font-weight: bold; }
           #work__section .work__section_content .navbar li a:hover {
             color: #222222; }
     #work__section .work__section_content .work__section_images {
@@ -437,18 +501,25 @@ a {
     #help__section .help__section_content .link {
       position: absolute;
       top: 40%;
-      left: 40%;
+      left: 37.5%;
       color: #ffffff;
-      font-weight: bold;
-      font-size: 1em;
-      font-family: "Amble-Regular";
+      font-weight: 700;
+      font-size: 1.2em;
       border: 2px solid #ffffff;
+      letter-spacing: 1px;
       border-radius: 2px;
-      width: 15em;
+      width: 16em;
       height: 3.5em;
       background: transparent;
-      padding: 1rem 3rem;
+      text-align: center;
+      display: block;
+      font-family: "Amble-Regular";
+      padding-top: 1em;
       cursor: pointer; }
+      #help__section .help__section_content .link:hover {
+        color: #222222;
+        border: 2px solid #ffffff;
+        background: #ffffff; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   #help__section .help__section_content .link {
@@ -457,8 +528,18 @@ a {
 
 @media (min-width: 481px) and (max-width: 576px) {
   #help__section .help__section_content .link {
-    top: 35%;
+    top: 36.3%;
     left: 25%; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #help__section .help__section_content .link {
+    top: 37.6%;
+    left: 28%; } }
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  #help__section .help__section_content .link {
+    top: 38.4%;
+    left: 34%; } }
 
 #client__section {
   height: auto;
@@ -629,18 +710,25 @@ a {
     #quote__section .quote__section_content .link {
       position: absolute;
       top: 40%;
-      left: 40%;
+      left: 37.5%;
       color: #ffffff;
-      font-weight: bold;
-      font-size: 1em;
-      font-family: "Amble-Regular";
+      font-weight: 700;
+      font-size: 1.2em;
       border: 2px solid #ffffff;
+      letter-spacing: 1px;
       border-radius: 2px;
-      width: 15em;
+      width: 16em;
       height: 3.5em;
       background: transparent;
-      padding: 1rem 3rem;
+      text-align: center;
+      display: block;
+      font-family: "Amble-Regular";
+      padding-top: 1em;
       cursor: pointer; }
+      #quote__section .quote__section_content .link:hover {
+        color: #222222;
+        border: 2px solid #ffffff;
+        background: #ffffff; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   #quote__section .quote__section_content .link {
@@ -649,8 +737,18 @@ a {
 
 @media (min-width: 481px) and (max-width: 576px) {
   #quote__section .quote__section_content .link {
-    top: 35%;
+    top: 36.3%;
     left: 25%; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #quote__section .quote__section_content .link {
+    top: 37.6%;
+    left: 28%; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #quote__section .quote__section_content .link {
+    top: 38.4%;
+    left: 33%; } }
 
 #contact__section {
   height: auto; }

@@ -54,16 +54,26 @@
         .link {
             position:absolute;
             top: 40%;
-            left: 40%;
+            left: 37.5%;
             color: $white;
-            font-weight: bold;            
+            font-weight: 700; 
+            font-size: 1.2em;           
             border: 2px solid $white;
+            letter-spacing: 1px;            
             border-radius: 2px;
-            width: 15em;
+            width: 16em;
             height: 3.5em;
             background: transparent;             
-            padding: 1rem 3rem;                 
+            text-align: center;
+            display: block;
+            font-family: $font_main; 
+            padding-top:1em;                
             cursor: pointer;
+            &:hover{
+                color: $line;
+                border: 2px solid $white;
+                background: $white; 
+            }
         }
     }   
 }
@@ -81,12 +91,32 @@
     #intro__section{
         .creativity__section_content{
             .link {
-                top: 35%;
+                top: 36.3%;
                 left: 25%;
             }
         }
     }        
 } 
+@media (min-width: 577px) and (max-width: 768px){
+    #intro__section{
+        .creativity__section_content{
+            .link {
+                top: 37.6%;
+                left: 28%;
+            }
+        }
+    }        
+}
+@media (min-width: 769px) and (max-width: 1000px){
+    #intro__section{
+        .creativity__section_content{
+            .link {
+                top: 38.4%;
+                left: 34%;
+            }
+        }
+    }        
+}  
 #work__section{
     height: auto;   
     .work__section_content{        
@@ -109,7 +139,7 @@
                 & a{
                     text-transform: uppercase;
                     color: $grey;
-                    font-weight: 500;
+                    font-weight: bold;
                     &:hover{
                         color: $line;
                     }
@@ -140,19 +170,27 @@
         .link {
             position:absolute;
             top: 40%;
-            left: 40%;
+            left: 37.5%;
             color: $white;
-            font-weight: bold;
-            font-size: 1em;
-            font-family: $font_main;
+            font-weight: 700; 
+            font-size: 1.2em;           
             border: 2px solid $white;
+            letter-spacing: 1px;            
             border-radius: 2px;
-            width: 15em;
+            width: 16em;
             height: 3.5em;
             background: transparent;             
-            padding: 1rem 3rem;                 
+            text-align: center;
+            display: block;
+            font-family: $font_main; 
+            padding-top:1em;                
             cursor: pointer;
-        }       
+            &:hover{
+                color: $line;
+                border: 2px solid $white;
+                background: $white; 
+            }
+        }
     }
 }
 @media (min-width: 320px) and (max-width: 480px){
@@ -169,12 +207,32 @@
     #help__section{
         .help__section_content{
             .link {
-                top: 35%;
+                top: 36.3%;
                 left: 25%;
             }
         }
     }        
-}   
+}
+@media (min-width: 577px) and (max-width: 768px){
+    #help__section{
+        .help__section_content{
+            .link {
+                top: 37.6%;
+                left: 28%;
+            }
+        }
+    }        
+}
+@media (min-width: 769px) and (max-width: 1000px){
+    #help__section{
+        .help__section_content{
+            .link {
+                top: 38.4%;
+                left: 34%;
+            }
+        }
+    }        
+}  
 
 
 #client__section{
@@ -337,8 +395,7 @@
             flex-direction:column; 
             justify-content: center;    
             padding-bottom: 2rem; 
-            padding-left: 2rem;  
-                 
+            padding-left: 2rem;                  
             .slider-box{
                 width: 20em;
                 height: 9em;
@@ -388,18 +445,26 @@
         .link {
             position:absolute;
             top: 40%;
-            left: 40%;
+            left: 37.5%;
             color: $white;
-            font-weight: bold;
-            font-size: 1em;
-            font-family: $font_main;
+            font-weight: 700; 
+            font-size: 1.2em;           
             border: 2px solid $white;
+            letter-spacing: 1px;            
             border-radius: 2px;
-            width: 15em;
+            width: 16em;
             height: 3.5em;
             background: transparent;             
-            padding: 1rem 3rem;                 
+            text-align: center;
+            display: block;
+            font-family: $font_main; 
+            padding-top:1em;                
             cursor: pointer;
+            &:hover{
+                color: $line;
+                border: 2px solid $white;
+                background: $white; 
+            }
         }      
     }    
 }
@@ -417,8 +482,28 @@
     #quote__section{
         .quote__section_content{
             .link {
-                top: 35%;
+                top: 36.3%;
                 left: 25%;
+            }
+        }
+    }        
+}
+@media (min-width: 577px) and (max-width: 768px){
+    #quote__section{
+        .quote__section_content{
+            .link {
+                top: 37.6%;
+                left: 28%;
+            }
+        }
+    }        
+}
+@media (min-width: 769px) and (max-width: 992px){
+    #quote__section{
+        .quote__section_content{
+            .link {
+                top: 38.4%;
+                left: 33%;
             }
         }
     }        
