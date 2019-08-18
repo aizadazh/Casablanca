@@ -31,7 +31,8 @@
                     }                 
                 }
                 .work__section_images{                             
-                    grid-template-columns: 1fr;
+                    flex-direction: column;
+                    align-content: space-between;
                     .img{
                         width: 100%;                                           
                     }                     

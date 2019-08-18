@@ -88,7 +88,8 @@
     #work__section .container .work__section_content .work__section_categories #tab-btn {
       padding-bottom: 0.5rem; }
   #work__section .container .work__section_content .work__section_images {
-    grid-template-columns: 1fr; }
+    flex-direction: column;
+    align-content: space-between; }
     #work__section .container .work__section_content .work__section_images .img {
       width: 100%; }
   #client__section .client__section_content .logo-section {
@@ -387,14 +388,13 @@ a {
 
 .welcome__section {
   height: 100%;
-  background: url("../images/hero.png") no-repeat;
+  background-image: url("../dist/images/hero.jpg") no-repeat;
   background-size: cover;
-  opacity: 0.9; }
+  position: relative; }
   .welcome__section .welcome__section_content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative; }
+    align-items: center; }
     .welcome__section .welcome__section_content .display1 {
       color: #ffffff;
       text-transform: uppercase;
@@ -413,11 +413,25 @@ a {
       text-align: center;
       padding-top: 2em;
       padding-bottom: 15em; }
-    .welcome__section .welcome__section_content .mouse-scroll {
-      width: 1.3em;
-      height: auto;
-      position: absolute;
-      bottom: 5%; }
+  .welcome__section .scroll_down {
+    width: 40px;
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 20px; }
+    .welcome__section .scroll_down .mouse {
+      display: block;
+      width: 35px;
+      height: 55px;
+      border-radius: 20px;
+      background: #ffffff;
+      box-sizing: border-box;
+      padding: 5px 0 0; }
+      .welcome__section .scroll_down .mouse div {
+        width: 10px;
+        height: 20px;
+        border-radius: 10px;
+        background: #d87843;
+        margin: 0 auto; }
 
 #intro__section {
   height: auto; }
@@ -501,14 +515,15 @@ a {
       #work__section .work__section_content .work__section_categories #tab-btn.active {
         color: #222222; }
     #work__section .work__section_content .work__section_images {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1.5em; }
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap; }
       #work__section .work__section_content .work__section_images .img {
-        width: 18em;
-        height: auto;
-        transition: all 1s; }
+        width: 100%;
+        transition: all 1s;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin: 0 auto; }
       #work__section .work__section_content .work__section_images div.hidden {
         animation: hiddenWork 1s forwards; }
 
@@ -703,33 +718,33 @@ a {
     align-content: space-between;
     align-items: center; }
   #choice__section .slider__multiple-item {
-    display: flex;
-    justify-content: space-around; }
+    display: flex; }
     #choice__section .slider__multiple-item .slider__section {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding-bottom: 2rem; }
+      align-content: center;
+      padding-bottom: 2rem;
+      padding-left: 2rem; }
       #choice__section .slider__multiple-item .slider__section .slider-box {
-        width: 20em;
+        width: 17em;
         height: 9em;
         position: relative; }
         #choice__section .slider__multiple-item .slider__section .slider-box .i-phone {
           width: 4em;
           height: 8em;
           position: absolute;
-          left: 25%; }
+          left: 30%; }
         #choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
           width: 8em;
           height: 5em;
           position: absolute;
-          left: 23%;
+          left: 26%;
           top: 35%; }
         #choice__section .slider__multiple-item .slider__section .slider-box .macbook {
           width: 8em;
           height: 5em;
           position: absolute;
-          left: 23%;
+          left: 26%;
           top: 35%; }
       #choice__section .slider__multiple-item .slider__section .display5 {
         color: #222222;
@@ -892,12 +907,11 @@ a {
   font-weight: 600;
   border: 2px solid #222222;
   border-radius: 2px;
-  width: 21em;
-  height: 3em;
+  width: 29%;
+  height: 4em;
   background: transparent;
   cursor: pointer;
-  margin-top: 3em;
-  margin-bottom: 3em; }
+  margin: 3em auto; }
   .btn__show:hover {
     background: #222222;
     color: #ffffff;

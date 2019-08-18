@@ -1,17 +1,18 @@
 .welcome__section{
     height: 100%;     
-    background: url("../images/hero.png") no-repeat;
-    background-size: cover;
-    opacity: 0.9; 
+    background-image: url("../dist/images/hero.jpg") no-repeat;
+    // background: linear-gradient(-90deg, #bb4343 0%, #efab4b 100%);
+    background-size: cover;  
+    position: relative;     
     .welcome__section_content{
+        
         display:flex;
         flex-direction: column;
         align-items: center;        
-        position: relative;
         .display1{
             color:$white;                             
             text-transform: uppercase; 
-            font-family: $font_title; 
+            font-family: $font_title;  
             font-size: 1.5rem; 
             padding-top: 8em;  
             text-align: center;     
@@ -29,14 +30,31 @@
             padding-top: 2em; 
             padding-bottom:15em;        
         }
-        .mouse-scroll{
-            width: 1.3em;
-            height:auto; 
-            position: absolute;            
-            bottom: 5%;   
-        }
-    }  
-}
+    }
+    .scroll_down{
+        width: 40px;
+        position: absolute;
+        left: calc(50% - 20px);
+        bottom: 20px;
+        .mouse {
+            display: block;
+            width: 35px;
+            height: 55px;
+            border-radius: 20px;
+            background: $white;
+            box-sizing: border-box;
+            padding: 5px 0 0;
+            div{
+                width: 10px;
+                height: 20px;
+                border-radius: 10px;
+                background: $red;
+                margin: 0 auto;
+            }
+        }  
+    }
+}  
+
 #intro__section{
     height: auto;    
     .intro__section_content{ 
@@ -148,14 +166,15 @@
                 }
             }    
     .work__section_images{        
-        display: grid;           
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;   
-        grid-gap: 1.5em;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
         .img{
-            width: 18em;
-            height: auto;
+            width: 100%;
             transition: all 1s;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+            margin: 0 auto;
             } 
         div.hidden{
             animation: hiddenWork 1s forwards;
@@ -417,35 +436,36 @@
         align-items: center;          
     }
     .slider__multiple-item{
-        display: flex;
-        justify-content: space-around;        
+        display: flex;            
         .slider__section{        
             display:flex;
             flex-direction:column; 
-            justify-content: center;    
-            padding-bottom: 2rem;                          
+            align-content: center;           
+            padding-bottom: 2rem;
+            padding-left: 2rem;     
+                                    
             .slider-box{
-                width: 20em;
+                width: 17em;
                 height: 9em;
                 position: relative; 
                 .i-phone{
                     width: 4em;
                     height: 8em;  
                     position: absolute;
-                    left: 25%;                      
+                    left: 30%;                      
                 }
                 .i-pad{
                     width: 8em;
                     height: 5em;                      
                     position: absolute;
-                    left: 23%;
+                    left: 26%;
                     top: 35%;                        
                 }
                 .macbook{
                     width: 8em;
                     height: 5em;              
                     position: absolute;
-                    left: 23%;
+                    left: 26%;
                     top:35%;                           
                 }
             }
