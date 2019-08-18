@@ -56,20 +56,32 @@
             <div class="work__section_content">               
                 <h2 class="display2">Some of our work</h2>                
                 <div class="dark__line"></div>
-                <ul class="navbar">
-                    <li class="nav-item"><a class="nav-link" href="#branding">All</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#webdesign">Branding</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#webdesign">Web design</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mobileui">Mobile UI</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#branding">Illustrations</a></li>
-                </ul>
-                <div class="work__section_images">                     
-                    <a href="#"><img id="branding" class="img" src="./images/img1.png"></a>          
-                    <a href="#"><img id="branding" class="img" src="./images/img2.png"></a>              
-                    <a href="#"><img id="webdesign" class="img" src="./images/img3.png"></a>                         
-                    <a href="#"><img id="webdesign" class="img" src="./images/img4.png"></a>              
-                    <a href="#"><img id="mobileui" class="img" src="./images/img5.png"></a>               
-                    <a href="#"><img id="mobileui" class="img" src="./images/img6.png"></a>  
+                <div class="work__section_categories">
+                    <button value="all" id="tab-btn" class="active">All</button>
+                    <button value="branding" id="tab-btn">Branding</button>
+                    <button value="webdesign" id="tab-btn">Web design</button>
+                    <button value="mobile" id="tab-btn">Mobile UI</button>
+                    <button value="illustrations" id="tab-btn">Illustrations</button>
+                </div>
+                <div class="work__section_images">
+                    <div class="work" data-category="webdesign">                    
+                        <div><img class="img" src="./images/img1.png" alt="work-category-images"></div> 
+                    </div> 
+                    <div class="work" data-category="branding">        
+                        <div><img class="img" src="./images/img2.png" alt="work-category-images"></div> 
+                    </div>  
+                    <div class="work" data-category="webdesign">
+                        <div><img class="img" src="./images/img3.png" alt="work-category-images"></div> 
+                    </div>
+                    <div class="work" data-category="mobile">                        
+                        <div><img class="img" src="./images/img4.png" alt="work-category-images"></div>  
+                    </div>
+                    <div class="work" data-category="branding">
+                        <div><img class="img" src="./images/img5.png" alt="work-category-images"></div>  
+                    </div>
+                    <div class="work" data-category="illustrations">                
+                        <div><img class="img" src="./images/img6.png" alt="work-category-images"></div> 
+                    </div> 
                 </div>                    
                 <button class="btn__show" type="button">Show me more</button>                
             </div>
@@ -291,6 +303,7 @@
     });
       </script>
       <script src="./scripts/video.js"></script>
+      <script src="./scripts/work.js"></script>
       
 
 

@@ -5,6 +5,9 @@
                 font-size: 1em;
                 width: 10em;
             }
+            .mouse-scroll{                          
+                top: 80%;   
+            }
         }
     }
     #intro__section {
@@ -20,24 +23,22 @@
     #work__section{
         .container{
             .work__section_content{
-                .navbar{
+                .work__section_categories {
+                    display:flex;
                     flex-direction: column;
-                    text-align: center;
-                    .nav-item{
-                        padding-bottom: 1rem;
-                    }
+                    #tab-btn{
+                        padding-bottom: 0.5rem;
+                    }                 
                 }
                 .work__section_images{                             
                     grid-template-columns: 1fr;
                     .img{
-                        width: 14em;
-                        height: auto;
+                        width: 100%;                                           
                     }                     
                 }
             }
         }
-    }
-   
+    }   
     #client__section{
         .client__section_content{
             .logo-section{        
@@ -169,18 +170,18 @@
     #work__section{
         .container{
             .work__section_content{
-                .navbar {
-                    flex-direction:column;
+                .work__section_categories {
+                    margin: 2rem 0;
                     text-align: center;
-                    .nav-item{
+                    #tab-btn{
                         padding-bottom: 0.5rem;
-                    }
+                    }                 
                 }
             .work__section_images{                             
                 grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
                 .img{
-                    width: 15em;
-                    height: auto;
+                    width: 100%;                                 
                 }                     
             }
         }
@@ -220,6 +221,11 @@
             }
         }
 }
+    #choice__section{         
+        .slider__multiple-item{  
+            margin-left: 2.5rem;
+        }
+    }
     #contact__section{ 
         .container {
             .contact__section_content{   
@@ -258,12 +264,17 @@
     #work__section{
         .container{
             .work__section_content{
-                
+                .work__section_categories {
+                    margin: 2rem 0;
+                    text-align: center;
+                    #tab-btn{
+                        padding-bottom: 0.5rem;
+                    }                 
+                }
             .work__section_images{                             
                 grid-template-columns: repeat(3, 1fr);
                 .img{
-                    width: 16em;
-                    height: auto;
+                    width: 100%;                    
                 }                     
             }
         }
@@ -291,7 +302,12 @@
                 }
             }
         }
-    }   
+    }  
+    #choice__section{         
+        .slider__multiple-item{  
+            margin-left: 2.5rem;
+        }
+    } 
     #about__section{
         .container{
             .our-employees{              
