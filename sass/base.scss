@@ -48,6 +48,16 @@ a {
     padding-top: 2em;  
     padding-bottom: 3rem;
 }
+@media (min-width: 320px) and (max-width: 576px){
+    .info__text {                   
+        width: 70%; 
+        line-height: 130%;   
+    }
+    .info__text_others {        
+        width: 70%;
+        line-height: 130%;  
+    }
+} 
 
 
 

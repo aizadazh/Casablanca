@@ -79,7 +79,8 @@
     }
     #choice__section{         
         .slider__multiple-item{  
-            margin-left: 2rem;                   
+            display: flex;
+            justify-content: center;                
             .slider__section{        
                 display:flex;
                 flex-direction:column; 
@@ -133,7 +134,7 @@
                     text-align: center;
                     padding: 2rem;
                     .contact__text{
-                        max-width: 90%;
+                        max-width: 100%;
                     }                    
                 }
                 .right__section{
