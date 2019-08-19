@@ -275,7 +275,7 @@
                     <form class="form">
                         <div class="input__area">          
                             <input class="input" type="text" placeholder="Name" />
-                            <input class="input" type="e-mail" placeholder="E-mail" />
+                            <input class="input" type="email" placeholder="E-mail" />
                         </div>  
                         <div class="textarea__area">
                             <input class="textarea" placeholder="Message" />
@@ -303,7 +303,7 @@
         </div>
     </footer>
      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>   
     <script src="./slick/slick.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script type="text/javascript">
@@ -321,6 +321,7 @@
                 breakpoint: 950,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                     
                 }
                 },
@@ -328,27 +329,15 @@
                 breakpoint: 860,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                     
                 }
-                },
-                {
-                breakpoint: 758,
-                settings: {
-                    slidesToShow: 2,
-                    
-                }
-                },
-                {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    
-                }
-                },
+                },                
                 {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
                     
                 }
                 },
@@ -356,6 +345,7 @@
                 breakpoint: 320,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
                 
                 }
                 }

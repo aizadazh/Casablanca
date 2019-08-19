@@ -445,10 +445,10 @@ header{
     }
 }
 #video__section {
-    height: 70vh;
+    height: 450px;
     width: 100%;     
     overflow: hidden;      
-    background: url("../images/video.png") no-repeat;
+    background: rgba(0, 0, 0, 0.4) url("../images/video.png") no-repeat;
     background-size: cover;   
     position: relative;      
     .play-icon {        
@@ -460,19 +460,21 @@ header{
         top: 45%;
         left: 47%;
         cursor: pointer;
-    }     
+    }  
+    #player{
+        opacity: 1;
+    }   
 }    
 
 @media (min-width: 320px) and (max-width: 480px){
     #video__section{
-        .video__section_content{
-            .play-icon {
-                top: 35%;
-                left: 43%;                
-            }
+        .play-icon {
+            top: 35%;
+            left: 43%;                
         }
-    }        
-}
+    }
+}        
+
 #choice__section{
     height: auto;     
     .choice__section_content{      
