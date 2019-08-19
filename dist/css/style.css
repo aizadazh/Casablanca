@@ -807,6 +807,20 @@ header {
         width: 16em;
         text-align: center;
         padding: 0 1.5rem; }
+    #choice__section .slider__multiple-item .slick-dots li {
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+      background: #b1afaf;
+      border-radius: 50%; }
+      #choice__section .slider__multiple-item .slick-dots li button:before {
+        content: ''; }
+    #choice__section .slider__multiple-item .slick-dots .slick-active button:before {
+      content: '';
+      background: #d87843;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px; }
 
 #quote__section {
   height: 50vh;

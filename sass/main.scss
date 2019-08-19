@@ -489,8 +489,7 @@ header{
             flex-direction:column; 
             align-content: center;           
             padding-bottom: 2rem;
-            padding-left: 2rem;     
-                                    
+            padding-left: 2rem;                                    
             .slider-box{
                 width: 17em;
                 height: 9em;
@@ -528,7 +527,35 @@ header{
                 padding: 0 1.5rem;                                            
             }
         }
+        
+        .slick-dots{
+            li {
+                width: 12px;
+                height: 12px;
+                opacity: 1;
+                background: $grey;
+                border-radius: 50%;
+                button{
+                    &:before{
+                        content: '';
+                    }
+                }
+            }
+            .slick-active{
+                button {
+                    &:before{
+                        content: '';
+                        background: $red;
+                        border-radius: 50%;
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+        
     }    
+       
 }
 #quote__section{
     height: 50vh; 
