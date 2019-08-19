@@ -1,13 +1,9 @@
 .container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0; }
-  .container .row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
+  overflow: hidden;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
 
 .col-1 {
   width: 8.33333%; }
@@ -386,52 +382,49 @@ a {
     width: 70%;
     line-height: 130%; } }
 
-.welcome__section {
-  height: 100%;
-  background-image: url("../dist/images/hero.jpg") no-repeat;
-  background-size: cover;
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #d56e4e;
   position: relative; }
-  .welcome__section .welcome__section_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .welcome__section .welcome__section_content .display1 {
-      color: #ffffff;
-      text-transform: uppercase;
-      font-family: "BigJohn";
-      font-size: 1.5rem;
-      padding-top: 8em;
-      text-align: center; }
-    .welcome__section .welcome__section_content .welcome__line {
-      width: 4rem;
-      border-bottom: 2px solid #ffffff;
-      padding-top: 2em; }
-    .welcome__section .welcome__section_content .welcome__text {
-      color: #ffffff;
-      font-size: 1.2em;
-      max-width: 50%;
-      text-align: center;
-      padding-top: 2em;
-      padding-bottom: 15em; }
-  .welcome__section .scroll_down {
-    width: 40px;
-    position: absolute;
-    left: calc(50% - 20px);
-    bottom: 20px; }
-    .welcome__section .scroll_down .mouse {
-      display: block;
-      width: 35px;
-      height: 55px;
-      border-radius: 20px;
-      background: #ffffff;
-      box-sizing: border-box;
-      padding: 5px 0 0; }
-      .welcome__section .scroll_down .mouse div {
-        width: 10px;
-        height: 20px;
-        border-radius: 10px;
-        background: #d87843;
-        margin: 0 auto; }
+  header .header__background {
+    height: 100vh;
+    background: url("../images/hero.jpg") no-repeat center 0%/cover; }
+    header .header__background .welcome__section {
+      height: 100vh;
+      background: linear-gradient(-90deg, #bb4343 0%, #efab4b 100%);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.9; }
+      header .header__background .welcome__section .welcome__section_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        header .header__background .welcome__section .welcome__section_content .display1 {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: "BigJohn";
+          font-size: 1.5rem;
+          padding-top: 8em;
+          text-align: center; }
+        header .header__background .welcome__section .welcome__section_content .welcome__line {
+          width: 4rem;
+          border-bottom: 2px solid #ffffff;
+          padding-top: 2em; }
+        header .header__background .welcome__section .welcome__section_content .welcome__text {
+          color: #ffffff;
+          font-size: 1.2em;
+          max-width: 50%;
+          text-align: center;
+          padding-top: 2em;
+          padding-bottom: 15em; }
+      header .header__background .welcome__section .scroll_down {
+        width: 40px;
+        position: absolute;
+        left: calc(50% - 20px);
+        bottom: 20px; }
 
 #intro__section {
   height: auto; }
