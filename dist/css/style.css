@@ -87,7 +87,7 @@
     flex-direction: column;
     align-content: space-between; }
     #work__section .container .work__section_content .work__section_images .img {
-      width: 100%; }
+      width: 95%; }
   #client__section .client__section_content .logo-section {
     display: flex;
     flex-direction: column;
@@ -176,6 +176,7 @@
     #work__section .container .work__section_content .work__section_categories #tab-btn {
       padding-bottom: 0.5rem; }
   #work__section .container .work__section_content .work__section_images {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem; }
     #work__section .container .work__section_content .work__section_images .img {
@@ -226,7 +227,9 @@
     #work__section .container .work__section_content .work__section_categories #tab-btn {
       padding-bottom: 0.5rem; }
   #work__section .container .work__section_content .work__section_images {
-    grid-template-columns: repeat(3, 1fr); }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; }
     #work__section .container .work__section_content .work__section_images .img {
       width: 100%; }
   #client__section .container .client__section_content .logo-section {
@@ -250,6 +253,19 @@
     grid-template-rows: auto;
     grid-gap: 2rem;
     justify-items: center; } }
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  #work__section .container .work__section_content .work__section_categories {
+    margin: 2rem 0;
+    text-align: center; }
+    #work__section .container .work__section_content .work__section_categories #tab-btn {
+      padding-bottom: 0.5rem; }
+  #work__section .container .work__section_content .work__section_images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; }
+    #work__section .container .work__section_content .work__section_images .img {
+      width: 100%; } }
 
 .hidden-menu {
   display: block;
@@ -969,10 +985,27 @@ header {
     color: #ffffff;
     border: 2px solid #ffffff; }
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .btn__show {
-    width: 16em;
-    height: 3em; } }
+    width: 80%; } }
+
+@media (min-width: 481px) and (max-width: 576px) {
+  .btn__show {
+    width: 60%; } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .btn__show {
+    width: 55%; } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn__show {
+    width: 31.5%;
+    margin-left: 37%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .btn__show {
+    width: 32%;
+    margin-left: 35.6%; } }
 
 .footer {
   height: auto;
