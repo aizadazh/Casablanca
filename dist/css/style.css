@@ -432,7 +432,7 @@ header {
         header .header__background .welcome__section .welcome__section_content .welcome__text {
           color: #ffffff;
           font-size: 1.2em;
-          max-width: 50%;
+          max-width: 60%;
           text-align: center;
           padding-top: 2em;
           padding-bottom: 15em; }
@@ -440,7 +440,7 @@ header {
         width: 40px;
         position: absolute;
         left: calc(50% - 20px);
-        bottom: 10%; }
+        bottom: 7%; }
 
 #intro__section {
   height: auto; }
@@ -566,7 +566,7 @@ header {
         cursor: pointer; }
         #work__section .work__section_content .work__section_images .overlay .overlay_heading {
           position: absolute;
-          top: 50%;
+          top: 38%;
           left: 28.5%;
           color: #ffffff;
           font-family: "BigJohn";
@@ -742,20 +742,21 @@ header {
       align-items: center; }
 
 #video__section {
-  height: 50vh;
-  width: auto; }
-  #video__section .video__section_content {
-    height: 50vh;
-    background: url("../images/video.png") no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 9999; }
-    #video__section .video__section_content .play-icon {
-      width: 3em;
-      height: auto;
-      position: absolute;
-      top: 40%;
-      left: 47%; }
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  background: url("../images/video.png") no-repeat;
+  background-size: cover;
+  position: relative; }
+  #video__section .play-icon {
+    width: 3em;
+    height: 3em;
+    border: none;
+    position: absolute;
+    display: block;
+    top: 45%;
+    left: 47%;
+    cursor: pointer; }
 
 @media (min-width: 320px) and (max-width: 480px) {
   #video__section .video__section_content .play-icon {

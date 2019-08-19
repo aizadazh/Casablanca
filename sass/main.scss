@@ -34,7 +34,7 @@ header{
                 .welcome__text {
                     color: $white; 
                     font-size: 1.2em;
-                    max-width: 50%;    
+                    max-width: 60%;    
                     text-align: center; 
                     padding-top: 2em; 
                     padding-bottom:15em;        
@@ -44,7 +44,7 @@ header{
                 width: 40px;
                 position: absolute;
                 left: calc(50% - 20px);
-                bottom: 10%;                
+                bottom: 7%;                
                 }  
             }
     }
@@ -212,7 +212,7 @@ header{
             cursor: pointer;                              
             .overlay_heading{
                 position: absolute;
-                top: 50%;
+                top: 38%;
                 left: 28.5%;
                 color: $white;
                 font-family: $font_title;
@@ -251,7 +251,6 @@ header{
         }
     }
 }
-
 #help__section{
     height: 50vh;
     width: auto;
@@ -446,30 +445,30 @@ header{
     }
 }
 #video__section {
-    height: 50vh;
-    width: auto;
-    .video__section_content{
-        height: 50vh;
-        background: url("../images/video.png") no-repeat;
-        background-size: cover;   
-        position: relative;
-        z-index: 9999;
-        .play-icon {
-            width: 3em;
-            height: auto;
-            position: absolute;
-            top: 40%;
-            left: 47%;
-        }     
-    }    
-}
+    height: 70vh;
+    width: 100%;     
+    overflow: hidden;      
+    background: url("../images/video.png") no-repeat;
+    background-size: cover;   
+    position: relative;      
+    .play-icon {        
+        width: 3em;
+        height: 3em;
+        border: none;
+        position: absolute;
+        display: block;
+        top: 45%;
+        left: 47%;
+        cursor: pointer;
+    }     
+}    
+
 @media (min-width: 320px) and (max-width: 480px){
     #video__section{
         .video__section_content{
             .play-icon {
                 top: 35%;
-                left: 43%;
-                
+                left: 43%;                
             }
         }
     }        
@@ -552,10 +551,8 @@ header{
                     }
                 }
             }
-        }
-        
-    }    
-       
+        }        
+    }   
 }
 #quote__section{
     height: 50vh; 
