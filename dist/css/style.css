@@ -424,7 +424,7 @@ header {
         width: 40px;
         position: absolute;
         left: calc(50% - 20px);
-        bottom: 20px; }
+        bottom: 10%; }
 
 #intro__section {
   height: auto; }
@@ -433,9 +433,10 @@ header {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 3rem; }
   #intro__section .creativity__section_content {
-    height: 50vh;
+    height: 60vh;
     background: url("../images/creativity.png") no-repeat;
     background-size: cover;
     position: relative; }
@@ -514,8 +515,6 @@ header {
       #work__section .work__section_content .work__section_images .img {
         width: 100%;
         transition: all 1s;
-        padding-bottom: 1rem;
-        padding-right: 1rem;
         margin: 0 auto; }
       #work__section .work__section_content .work__section_images div.hidden {
         animation: hiddenWork 1s forwards; }
@@ -528,14 +527,58 @@ header {
     height: 0px;
     margin: 0; } }
       #work__section .work__section_content .work__section_images .work > div {
+        max-width: 340px;
+        overflow: hidden;
         width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center; }
+        margin: 1em 1em;
+        position: relative; }
+        #work__section .work__section_content .work__section_images .work > div:hover .overlay {
+          display: block; }
       #work__section .work__section_content .work__section_images .work > div > img {
         width: 100%;
         max-width: 370px;
         height: 100%; }
+      #work__section .work__section_content .work__section_images .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 5px solid #222222;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+        #work__section .work__section_content .work__section_images .overlay .overlay_heading {
+          position: absolute;
+          top: 50%;
+          left: 28.5%;
+          color: #ffffff;
+          font-family: "BigJohn";
+          text-transform: uppercase;
+          font-size: 1.2em;
+          font-weight: 600;
+          margin-left: 1.5rem; }
+        #work__section .work__section_content .work__section_images .overlay .overlay_link {
+          position: absolute;
+          top: 50%;
+          left: 30%;
+          color: #ffffff;
+          font-family: "Amble-Regular";
+          text-decoration: none;
+          font-size: 1.5em;
+          font-weight: 400; }
+          #work__section .work__section_content .work__section_images .overlay .overlay_link::after {
+            content: "";
+            display: block;
+            margin-top: 2rem;
+            width: 2.5em;
+            height: 0.1em;
+            background-color: #d87843;
+            margin-left: 2.5rem; }
+          #work__section .work__section_content .work__section_images .overlay .overlay_link:hover {
+            color: #d87843; }
+        #work__section .work__section_content .work__section_images .overlay:hover {
+          display: block; }
 
 #help__section {
   height: 50vh;
@@ -900,7 +943,7 @@ header {
   font-weight: 600;
   border: 2px solid #222222;
   border-radius: 2px;
-  width: 29%;
+  width: 29.5%;
   height: 4em;
   background: transparent;
   cursor: pointer;
