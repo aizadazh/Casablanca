@@ -254,38 +254,37 @@
                 <div class="dark__line"></div>                
                 <p class="info__text_others">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>                    
             </div> 
-        </div>
-    </section>
-    <section id="contact__section">
-        <div class="container"> 
-            <div class="contact__section_content">
-                <div class="left__section">
-                    <h4 class="display4">Our location</h4>               
-                    <p class="contact__text">174 Mimosa ST. NW Casablanca, MA 20370 (212) 123 456 7 Samir Timezguida</p>               
-                    <div class="social-box">
-                        <a href="/"><img class="social__links" src="./icons/twitter.png" alt="twitter"></a>
-                        <a href="/"><img class="social__links" src="./icons/fb.png" alt="fb"></a>
-                        <a href="/"><img class="social__links" src="./icons/in.png" alt="in"></a>
-                        <a href="/"><img class="social__links" src="./icons/vc.png" alt="vimeo"></a>
-                        <a href="/"><img class="social__links" src="./icons/Be.png" alt="behance"></a>
-                    </div>
-                </div>
-                <div class="right__section">
-                    <form class="form">
-                        <div class="input__area">          
-                            <input class="input" type="text" placeholder="Name" />
-                            <input class="input" type="email" placeholder="E-mail" />
-                        </div>  
-                        <div class="textarea__area">
-                            <input class="textarea" placeholder="Message" />
-                        </div>
-                        <div class="send">
-                            <button class="send__button" type="submit">Send</button>            
-                        </div>
-                    </form>                
+        </div>    
+        <div id="contact__section">       
+            <div class="left__section">
+                <h4 class="display4">Our location</h4>              
+                <p class="contact__text">174 Mimosa ST. NW</p>
+                <p class="contact__text">Casablanca, MA 20370</p>
+                <p class="contact__text">(212) 123 456 7</p>
+                <p class="contact__text">Samir Timezguida</p>             
+                <div class="social-box">
+                    <a href="/"><img class="social__links" src="./icons/twitter.png" alt="Twitter"></a>
+                    <a href="/"><img class="social__links" src="./icons/fb.png" alt="Facebook"></a>
+                    <a href="/"><img class="social__links" src="./icons/in.png" alt="Linkedin"></a>
+                    <a href="/"><img class="social__links" src="./icons/vc.png" alt="Vimeo"></a>
+                    <a href="/"><img class="social__links" src="./icons/Be.png" alt="Behance"></a>
                 </div>
             </div>
-        </div>
+            <div class="right__section">
+                <form action="#" class="form">
+                    <div class="input__area">          
+                        <input class="input" type="text" placeholder="Name" />
+                        <input class="input" type="email" placeholder="E-mail" />
+                    </div>  
+                    <div class="textarea__area">
+                        <textarea type="text" placeholder="Message" id="message" rows="1"></textarea>
+                    </div> 
+                    <div class="send">                  
+                        <input type="submit" id="submit" class="contact__button" value="Send">
+                    </div> 
+                </form>                             
+            </div>      
+        </div>    
     </section>
     <footer class="footer">
         <div class="container"> 
@@ -335,7 +334,8 @@
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,                    
+                    slidesToScroll: 1,
+                    centerMode:true,                    
                 }
                 },                
             ]
@@ -344,8 +344,6 @@
       </script>      
       <script src="./scripts/video.js"></script>
       <script src="./scripts/work.js"></script>
-      <script src="./scripts/menu.js"></script>
-
 
 </body>
 </html>

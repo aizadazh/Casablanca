@@ -14,7 +14,8 @@
         } 
         .footer__text{
             text-align: center; 
-            padding-bottom: 2rem;     
+            padding-bottom: 2rem;
+            padding-top: 2rem;        
             .grey-text{
                 color: $bg-greyer;
                 font-size: 0.8em;
@@ -30,7 +31,8 @@
     .footer{
         .footer__text {
             max-width: 10em;
-            padding-bottom: 2rem;          
+            padding-bottom: 2rem;  
+            padding-top: 2rem;         
         }
     } 
 }

@@ -492,89 +492,122 @@ header{
 }
 #contact__section{    
     height: auto; 
-    .contact__section_content{
-        display: flex;    
-        .left__section{
-            width: 38%;
-            height: auto;
-            background: $bg-grey;
-            padding: 2rem 0;    
-            padding-left: 7rem;   
-            .display4{
-                text-transform: uppercase;
-                font-weight: 400;
-                font-family: $font_title;
-                padding-bottom: 1rem;
-            }
-            .contact__text{
-                color: $line;
-                max-width: 60%;
-                font-weight: 500;
-                line-height: 200%;
-                font-style: italic;
-                padding-bottom: 1rem;
-            }
-            .social__links{
-                padding-right: 1.2rem;
-            }
-        }        
-        .right__section{
-            width: 62%;
-            background: $bg-greyer;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            .form{
-                width: 90%;
-                padding-left: 3rem;
-                .input__area{
-                    display: flex;
-                    justify-content: space-between;
-                    padding-bottom: 3rem;
-                    .input{
-                        background: transparent;
-                        width: 45%;  
-                        border: none;                 
-                        border-bottom: 1.5px solid $grey;
-                        height: 3em; 
-                        padding: 0.5rem 1rem;
-                        color: $form-text;
-                        font-style: italic;
-                    }
-                    input::placeholder{
-                        font-style: italic;
-                    }
-                }
-                .textarea__area{
-                    width: 100%;
-                    .textarea {
-                        width:100%;
-                        background: transparent;
-                        border: none;
-                        border-bottom: 1.5px solid $grey;
-                        height: 3em; 
-                        padding: 0.5rem 1rem;
-                        color: $form-text;
-                        font-style: italic;
-                        margin-bottom: 1rem;
-                    }        
-                }
-                .send{
-                    display: flex;
-                    justify-content: flex-end;
-                    .send__button{
-                        color: $line; 
-                        font-weight: 600;
-                        font-size: 1em;
-                        font-family: $font_main;                   
-                        width: 8em;
-                        height: 2.5em;
-                        border: 2px solid $line;
-                        border-radius: 2px;                 
-                    }            
-                }                   
-            }             
+    display:flex;
+    justify-content: space-between;   
+    .left__section{
+        flex-basis: 40%;       
+        box-sizing: border-box;
+        background: $bg-grey;
+        padding-left: 7em;
+        padding-top:5rem; 
+        .display4{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.2em;
+            font-family: $font_title;
+            padding-bottom: 1.5rem;
         }
+        .contact__text{
+            color: $line;                
+            font-weight: 300;               
+            font-style: italic;
+            padding-bottom: 0.6em;
+            text-align: justify;
+            
+        }        
+        .social-box{
+            display: flex;
+            justify-content: space-between;   
+            align-items: center;          
+            width: 11em;
+            margin-top: 1.2rem;               
+        }
+    }        
+    .right__section{
+        flex-basis: 60%;
+        background: $bg-greyer;
+        box-sizing: border-box;
+        padding-left: 2rem;
+        padding-right: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 3rem;                      
+        .form{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;           
+            .input__area{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 5rem;
+                .input{
+                    background: transparent;
+                    width: 45%;  
+                    border: none;                 
+                    border-bottom: 1.5px solid $grey;
+                    height: 3em; 
+                    padding: 0.5rem 1rem;
+                    color: $form-text;
+                    font-weight: 400;
+                    font-style: italic;
+                    font-size: 1em; 
+                }
+                input::placeholder{
+                    font-style: italic;
+                    color: $grey;
+                    font-weight: 400;
+                    font-style: italic;
+                    font-size: 1em;
+                    font-family: $font_main; 
+                }
+            }
+            .textarea__area{
+                width: 100%;
+                border: none;
+                border-bottom: 1.5px solid $grey;               
+                resize: none;
+                textarea {                   
+                    padding: 0.5rem 1rem;
+                    background-color: $bg-greyer; 
+                    border: none;
+                    width: 100%; 
+                    font-size: 1em;               
+                    color: $form-text;
+                    font-family: $font_main;
+                    font-weight: 400;
+                    font-style: italic;
+                    ::placeholder{
+                        font-style: italic;
+                        color: $grey;
+                        font-weight: 400;
+                        font-style: italic;
+                        font-size: 1em;
+                        font-family: $font_main; 
+                        }
+                    }            
+                }
+            .send{
+                display:flex;
+                justify-content: flex-end;
+                .contact__button {
+                    color: $line;
+                    border: 3px solid $line;
+                    font-size: 1.5em;
+                    font-family: $font_main;
+                    width: 7em;
+                    height: 2.5em;
+                    font-weight: bold;
+                    font-style: normal;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    margin-top: 2rem;                   
+                   
+                }  
+            }          
+            
+        }             
     }
-} 
+}
+
