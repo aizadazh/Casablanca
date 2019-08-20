@@ -61,13 +61,11 @@ header{
         }
         .creativity__section_content{
             height: 60vh;
-            background:url("../images/creativity.png") no-repeat;
-            background-size: cover;
-            position: relative;
-            .link {
-                position:absolute;
-                top: 40%;
-                left: 37.5%;
+            background:url("../images/creativity.png") no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .link {                
                 color: $white;
                 font-weight: 700; 
                 font-size: 1.2em;           
@@ -90,48 +88,7 @@ header{
             }
         }   
     }
-    @media (min-width: 320px) and (max-width: 480px){
-        #intro__section{
-            .creativity__section_content{
-                .link {
-                    top: 38%;
-                    left: 15%;                
-                    font-size: 1em;               
-                    width: 15em;       
-                }
-            }
-        }        
-    } 
-    @media (min-width: 481px) and (max-width: 576px){
-        #intro__section{
-            .creativity__section_content{
-                .link {
-                    top: 38%;
-                    left: 25%;
-                }
-            }
-        }        
-    } 
-    @media (min-width: 577px) and (max-width: 768px){
-        #intro__section{
-            .creativity__section_content{
-                .link {
-                    top: 38%;
-                    left: 28%;
-                }
-            }
-        }        
-    }
-    @media (min-width: 769px) and (max-width: 1000px){
-        #intro__section{
-            .creativity__section_content{
-                .link {
-                    top: 38%;
-                    left: 34%;
-                }
-            }
-        }        
-    }  
+   
 #work__section{
     height: auto;   
     .work__section_content{        
@@ -140,7 +97,7 @@ header{
         align-content: space-between;
         align-items: center; 
         .work__section_categories {
-            margin: 40px 0;
+            margin: 2rem 0;
             #tab-btn{
                 border: none;
                 background: transparent;
@@ -186,7 +143,8 @@ header{
                 max-width: 340px;
                 overflow: hidden;
                 width: 100%;                              
-                margin: 1em 1em;
+                margin-left: 1rem;
+                margin-bottom: 0.8rem;
                 position: relative;
                 &:hover {
                     .overlay {
@@ -253,16 +211,14 @@ header{
 }
 #help__section{
     height: 50vh;
-    width: auto;
+    width: auto;    
     .help__section_content{
         height: 50vh;
-        background: url("../images/client.png") no-repeat;
-        background-size: cover;
-        position: relative; 
-        .link {
-            position:absolute;
-            top: 40%;
-            left: 37.5%;
+        background: url("../images/client.png") no-repeat center center/cover;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .link {            
             color: $white;
             font-weight: 700; 
             font-size: 1.2em;           
@@ -285,48 +241,6 @@ header{
         }
     }
 }
-@media (min-width: 320px) and (max-width: 480px){
-    #help__section{
-        .help__section_content{
-            .link {
-                top: 38%;
-                left: 15%;
-                font-size: 1em;               
-                width: 15em;
-            }
-        }
-    }        
-} 
-@media (min-width: 481px) and (max-width: 576px){
-    #help__section{
-        .help__section_content{
-            .link {
-                top: 38%;
-                left: 25%;
-            }
-        }
-    }        
-}
-@media (min-width: 577px) and (max-width: 768px){
-    #help__section{
-        .help__section_content{
-            .link {
-                top: 38%;
-                left: 28%;
-            }
-        }
-    }        
-}
-@media (min-width: 769px) and (max-width: 1000px){
-    #help__section{
-        .help__section_content{
-            .link {
-                top: 38%;
-                left: 34%;
-            }
-        }
-    }        
-}  
 #client__section{
     height: auto; 
     background: $bg-light;  
@@ -444,36 +358,22 @@ header{
         }
     }
 }
-#video__section {
+#video__section {      
     height: 450px;
-    width: 100%;     
-    overflow: hidden;      
-    background: rgba(0, 0, 0, 0.4) url("../images/video.png") no-repeat;
-    background-size: cover;   
-    position: relative;      
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.4) url("../images/video.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
     .play-icon {        
         width: 3em;
-        height: 3em;
-        border: none;
-        position: absolute;
-        display: block;
-        top: 45%;
-        left: 47%;
+        height: 3em;       
         cursor: pointer;
-    }  
+    } 
     #player{
         opacity: 1;
-    }   
-}    
-
-@media (min-width: 320px) and (max-width: 480px){
-    #video__section{
-        .play-icon {
-            top: 35%;
-            left: 43%;                
-        }
-    }
-}        
+    }       
 
 #choice__section{
     height: auto;     
@@ -561,13 +461,11 @@ header{
     padding-top: 2rem; 
     .quote__section_content{   
         height: 50vh;    
-        background: url("../images/get.png") no-repeat;
-        background-size: cover; 
-        position: relative;
+        background: url("../images/get.png") no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .link {
-            position:absolute;
-            top: 40%;
-            left: 37.5%;
             color: $white;
             font-weight: 700; 
             font-size: 1.2em;           
@@ -589,48 +487,6 @@ header{
             }
         }      
     }    
-}
-@media (min-width: 320px) and (max-width: 480px){
-    #quote__section{
-        .quote__section_content{
-            .link {
-                top: 38%;
-                left: 15%;
-                font-size: 1em;               
-                width: 15em; 
-            }
-        }
-    }        
-}
-@media (min-width: 481px) and (max-width: 576px){
-    #quote__section{
-        .quote__section_content{
-            .link {
-                top: 38%;
-                left: 25%;
-            }
-        }
-    }        
-}
-@media (min-width: 577px) and (max-width: 768px){
-    #quote__section{
-        .quote__section_content{
-            .link {
-                top: 38%;
-                left: 28%;
-            }
-        }
-    }        
-}
-@media (min-width: 769px) and (max-width: 992px){
-    #quote__section{
-        .quote__section_content{
-            .link {
-                top: 38%;
-                left: 33%;
-            }
-        }
-    }        
 }
 #contact__section{    
     height: auto; 

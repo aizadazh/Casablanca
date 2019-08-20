@@ -1,5 +1,5 @@
 function videoPlay() {
-  document.getElementById("video").innerHTML = "<div id='player'></div>";
+  document.getElementById("video__section").innerHTML = "<div id='player'></div>";
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];

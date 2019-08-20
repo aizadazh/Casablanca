@@ -6,20 +6,10 @@
                 width: 10em;
             }
             .mouse-scroll{                          
-                top: 80%;   
+                bottom: 10%;   
             }
         }
-    }
-    #intro__section {
-        .content-wrapper  {               
-            .creativity__section_content{      
-                .link {               
-                    top: 35%;
-                    left: 20%;
-                }  
-            }          
-        }
-    }
+    }  
     #work__section{
         .container{
             .work__section_content{
@@ -34,7 +24,7 @@
                     flex-direction: column;
                     align-content: space-between;
                     .img{
-                        width: 95%;                                           
+                        width: 90%;                                           
                     }                     
                 }
             }
@@ -183,9 +173,12 @@
                 display: grid;                            
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 1rem;
-                .img{
-                    width: 100%;                                 
-                }                     
+                .work_images{
+                    margin-bottom: 0.01rem;                    
+                    .img{
+                        width: 100%;                    
+                    } 
+                }                      
             }
         }
     }
@@ -278,9 +271,12 @@
                 display:grid;                            
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 1rem;
-                .img{
-                    width: 100%;                    
-                }                     
+                .work_images{
+                    margin-bottom: 0.01rem;                    
+                    .img{
+                        width: 100%;                    
+                    } 
+                }                    
             }
         }
     }
@@ -331,7 +327,7 @@
         .container{
             .work__section_content{
                 .work__section_categories {
-                    margin: 2rem 0;
+                    margin: 2rem 0;                  
                     text-align: center;
                     #tab-btn{
                         padding-bottom: 0.5rem;
@@ -341,8 +337,11 @@
                 display:grid;                            
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 1rem;
-                .img{
-                    width: 100%;                    
+                .work_images{
+                    margin-bottom: 0.01rem;                    
+                    .img{
+                        width: 100%;                    
+                    } 
                 }                     
             }
         }
