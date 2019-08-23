@@ -12,38 +12,29 @@
   
 </head>
 <body>   
-    <nav class="navbar">        
-        <input type="checkbox" id="hmt" class="hidden-menu-ticker">   
-        <label class="btn-menu" for="hmt">
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-        </label>          
-        <ul class="hidden-menu">
-            <li><a href="#intro__section">Introduction</a>
-            <li><a href="#work__section">Some of our works</a>
-            <li><a href="#help__section">We're here to help</a>
-            <li><a href="#client__section">Our clients</a>
-            <li><a href="#about__section">About us</a>
-            <li><a href="#choice__section">Why choose us</a>
-            <li><a href="#contact__section">Get in touch</a>                 
-        </ul> 
-    </nav> 
-    <header>
-        <div class="header__background">            
-            <div class="welcome__section">                         
-                <div class="welcome__section_content">                            
-                    <h1 class="display1">We've got the talent</h1>                        
-                    <div class="welcome__line"></div>                         
-                    <p class="welcome__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>                
-                </div>         
-                <div class="scroll_down">
-                    <a href="#intro__section" class="mouse">
-                        <img src="./images/Mouse.png" alt="mouse" />
-                    </a>
-                </div>
-            </div> 
-        </div>     
+    <header>       
+        <div class="main-nav">
+            <a class="nav-btn"><span></span></a>
+            <nav class="nav-list">
+                <a href="#intro__section">Introduction</a>
+                <a href="#work__section">Our works</a>
+                <a href="#help__section">We're here to help</a>
+                <a href="#client__section">Our clients</a>
+                <a href="#about__section">About us</a>
+                <a href="#choice__section">Why choose us</a>
+                <a href="#contact__section">Contacts</a> 
+            </nav>
+        </div>
+        <div class="container cont-intro">
+            <div class="intro-text">                                         
+                <h1>We've got the talent</h1>                                     
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                
+            </div>               
+            <a class="mouse-scroll" href="#intro__section">
+                <img src="./images/Mouse.png" alt="mouse" />
+            </a>
+        </div>                      
     </header>     
     <section id="intro__section">           
         <div class="intro__section_content">                
@@ -123,7 +114,7 @@
                         </div> 
                     </div> 
                 </div>                    
-                <button class="btn__show" type="button">Show me more</button>                
+                <a href="#" class="btn-show">Show me more</a>             
             </div>
         </div>                       
     </section>
@@ -342,8 +333,8 @@
         });
     });
       </script>      
-      <script src="./scripts/video.js"></script>
-      <script src="./scripts/work.js"></script>
+      <script src="./scripts/main.js"></script>
+     
 
 </body>
 </html>

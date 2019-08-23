@@ -52,35 +52,4 @@
         border: 2px solid $white;
     }
 }
-@media (min-width: 320px) and (max-width: 480px){     
-    .btn__show{  
-        width: 85%;  
-             
-    }
-}
-@media (min-width: 481px) and (max-width: 576px) {     
-    .btn__show{  
-        width:60%;
-              
-    }
-}
-@media (min-width: 577px) and (max-width: 768px){     
-    .btn__show{  
-        width:55%; 
-               
-    }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-    .btn__show{  
-        width:31.5%;
-        margin-left: 37%;  
-            
-    }    
-}
-@media (min-width: 992px) and (max-width: 1199px){
-    .btn__show{  
-        width:32%;
-        margin-left: 35.6%; 
-              
-    }    
-}
+
