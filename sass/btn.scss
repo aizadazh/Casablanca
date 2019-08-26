@@ -18,17 +18,17 @@
         border: 1px solid $white;    
     }   
 }
-.btn__show{
+.btn-show{
+    font-size: 1.5rem;
+    line-height: 60px;
     color: $line;
+    border: 1px solid $line;
+    font-family: $font_main;
     font-weight: 600;
-    border: 2px solid $line;
-    border-radius: 2px;
-    width: 29.5%;
-    height: 4em;
-    background: transparent;           
-    cursor: pointer;   
-    margin: 3em auto;
-    
+    text-align: center;
+    cursor: pointer; 
+    width: 27.5%;
+    margin: 2rem auto;   
     &:hover{
         background: $line;
         color: $white;
