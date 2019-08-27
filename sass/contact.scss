@@ -204,7 +204,7 @@ form button.send {
 }
 @media (max-width: 750px) {
     form {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
     }   
     .name {
@@ -258,12 +258,6 @@ form button.send {
    
 }
 
-@media (max-width: 455px) {
-    .contacts__right-bottom textarea {
-        padding-right: 0;
-        width: 100%;
-    }
-}
 
 
 

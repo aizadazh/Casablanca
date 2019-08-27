@@ -62,55 +62,7 @@
                 }
             }
         }
-    }
-    #choice__section{         
-        .slider__multiple-item{  
-            display: flex;
-            justify-content: center;                
-            .slider__section{        
-                display:flex;
-                flex-direction:column; 
-                justify-content: center;    
-                padding-bottom: 2rem; 
-                padding-left: 2rem;                  
-                .slider-box{
-                    width: 20em;
-                    height: 9em;
-                    position: relative; 
-                    .i-phone{
-                        width: 4em;
-                        height: 8em;  
-                        position: absolute;
-                        left: 25%;                      
-                    }
-                    .i-pad{
-                        width: 8em;
-                        height: 5em;                      
-                        position: absolute;
-                        left: 23%;
-                        top: 35%;                        
-                    }
-                    .macbook{
-                        width: 8em;
-                        height: 5em;              
-                        position: absolute;
-                        left: 23%;
-                        top:35%;                           
-                    }
-                }
-                .display5{
-                    color: $line;
-                    padding: 1rem 0;
-                    padding-left: 5rem;              
-                    }
-                .slider-text {
-                    color: $line;
-                    width: 16em; 
-                    text-align: center;                                            
-                }
-            }
-        }    
-    }
+    }    
 }   
 @media (min-width: 577px) and (max-width: 768px){        
     #work__section{
@@ -178,50 +130,7 @@
                 }
             }
         }
-}
-    #choice__section{         
-        .slider__multiple-item{  
-            margin-left: 0 3rem;
-        }
-    }
-    #choice__section{
-        #contact__section{    
-            flex-direction: column;   
-            .left__section{
-               padding: 2rem;         
-                .display4{                
-                    font-size: 1em;
-                    text-align: center;               
-                }
-                .contact__text{               
-                    text-align: center;                
-                } 
-                .social-box{ 
-                    margin-left: auto;
-                    margin-right:auto;        
-            }
-        }        
-            .right__section{
-                flex-basis: 100%;                                
-                .form{ 
-                    width: 100%; 
-                    padding-left: 2rem;                   
-                    .input__area{
-                        width: 100%;
-                        flex-direction: column;
-                        .input{
-                            width: 100%;
-                            margin-bottom: 2rem;
-                        }
-                    }                    
-                    .send{                    
-                        justify-content: center;         
-                        }             
-                    }
-                }
-            }
-        }
-    
+    }   
 }
 @media (min-width: 769px) and (max-width: 992px){         
     #work__section{
@@ -268,12 +177,8 @@
                 }
             }
         }
-    }  
-    #choice__section{         
-        .slider__multiple-item{  
-            margin-left: 2.5rem;
-        }
     } 
+
     #about__section{
         .container{
             .our-employees{          
@@ -333,12 +238,11 @@
             }     
             .last-box{               
                 width: 95%;
-                height: 16.5em;            
-               
-            }         
+                height: 16.5em;           
+                }         
+            }
         }
     }
-}
 }
 
             

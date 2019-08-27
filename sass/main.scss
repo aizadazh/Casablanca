@@ -350,52 +350,53 @@ height: auto;
         align-items: center;          
     }
     .slider__multiple-item{
-        display: flex;  
-        justify-content: space-between;          
-        .slider__section{        
-            display:flex;
+        display: flex;
+        justify-content: space-between;
+        .slider__section{                      
+            display: flex;
             flex-direction:column; 
-            justify-content: center;         
-            padding-bottom: 2rem;
-            padding-left: 2rem;                                    
+            align-items: center; 
             .slider-box{
-                width: 17em;
-                height: 9em;
-                position: relative; 
-                .i-phone{
-                    width: 4em;
-                    height: 8em;  
-                    position: absolute;
-                    left: 30%;                      
-                }
-                .i-pad{
-                    width: 8em;
-                    height: 5em;                      
-                    position: absolute;
-                    left: 26%;
-                    top: 35%;                        
-                }
-                .macbook{
-                    width: 8em;
-                    height: 5em;              
-                    position: absolute;
-                    left: 26%;
-                    top:35%;                           
-                }
+                height:10em;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .img-iphone{                    
+                    display: block;
+                    margin: 0 auto;                   
+                } 
+                .img-ipad{                    
+                    display: block;
+                    margin: 0 auto;
+                    transform: translateY(1rem);
+                             
+                } 
+                .img-macbook{                    
+                    display: block;
+                    margin: 0 auto;  
+                    transform: translateY(0.7rem);
+                                
+                } 
+
             }
+           
             .display5{
                 color: $line;
-                padding: 1rem 0;
-                padding-left: 5rem;              
+                text-align: center;
+                margin: 1rem auto;                            
                 }
             .slider-text {
                 color: $line;
                 width: 16em; 
-                text-align: center;
-                padding: 0 1.5rem;                                            
+                text-align: center;  
+                padding-bottom: 1rem;                                                         
             }
         }
-        
+       
+    
+         
+           
+           
         .slick-dots{
             li {
                 width: 12px;

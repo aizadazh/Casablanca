@@ -71,7 +71,7 @@
 
 header {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(-90deg, #bb4343 0%, #efab4b 100%), #d56d4d url("../images/hero.jpg") no-repeat center 0%/cover;
   background-blend-mode: screen, multiply;
   position: relative; }
@@ -267,45 +267,7 @@ header {
     #about__section .container .our-employees .last-box {
       width: 95%;
       height: 21em;
-      margin: 0 auto; }
-  #choice__section .slider__multiple-item {
-    display: flex;
-    justify-content: center; }
-    #choice__section .slider__multiple-item .slider__section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-bottom: 2rem;
-      padding-left: 2rem; }
-      #choice__section .slider__multiple-item .slider__section .slider-box {
-        width: 20em;
-        height: 9em;
-        position: relative; }
-        #choice__section .slider__multiple-item .slider__section .slider-box .i-phone {
-          width: 4em;
-          height: 8em;
-          position: absolute;
-          left: 25%; }
-        #choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
-          width: 8em;
-          height: 5em;
-          position: absolute;
-          left: 23%;
-          top: 35%; }
-        #choice__section .slider__multiple-item .slider__section .slider-box .macbook {
-          width: 8em;
-          height: 5em;
-          position: absolute;
-          left: 23%;
-          top: 35%; }
-      #choice__section .slider__multiple-item .slider__section .display5 {
-        color: #222222;
-        padding: 1rem 0;
-        padding-left: 5rem; }
-      #choice__section .slider__multiple-item .slider__section .slider-text {
-        color: #222222;
-        width: 16em;
-        text-align: center; } }
+      margin: 0 auto; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
   #work__section .container .work__section_content .work__section_categories {
@@ -343,34 +305,7 @@ header {
       width: 95%;
       height: 18.2em;
       margin-top: 0.3em;
-      margin-left: 0.3em; }
-  #choice__section .slider__multiple-item {
-    margin-left: 0 3rem; }
-  #choice__section #contact__section {
-    flex-direction: column; }
-    #choice__section #contact__section .left__section {
-      padding: 2rem; }
-      #choice__section #contact__section .left__section .display4 {
-        font-size: 1em;
-        text-align: center; }
-      #choice__section #contact__section .left__section .contact__text {
-        text-align: center; }
-      #choice__section #contact__section .left__section .social-box {
-        margin-left: auto;
-        margin-right: auto; }
-    #choice__section #contact__section .right__section {
-      flex-basis: 100%; }
-      #choice__section #contact__section .right__section .form {
-        width: 100%;
-        padding-left: 2rem; }
-        #choice__section #contact__section .right__section .form .input__area {
-          width: 100%;
-          flex-direction: column; }
-          #choice__section #contact__section .right__section .form .input__area .input {
-            width: 100%;
-            margin-bottom: 2rem; }
-        #choice__section #contact__section .right__section .form .send {
-          justify-content: center; } }
+      margin-left: 0.3em; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
   #work__section .container .work__section_content .work__section_categories {
@@ -397,8 +332,6 @@ header {
       width: 9em;
       height: auto;
       padding-top: 1.5rem; }
-  #choice__section .slider__multiple-item {
-    margin-left: 2.5rem; }
   #about__section .container .our-employees {
     grid-template-columns: 1fr 1fr 1fr; }
     #about__section .container .our-employees .employee-image .img {
@@ -777,39 +710,32 @@ p {
     #choice__section .slider__multiple-item .slider__section {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding-bottom: 2rem;
-      padding-left: 2rem; }
+      align-items: center; }
       #choice__section .slider__multiple-item .slider__section .slider-box {
-        width: 17em;
-        height: 9em;
-        position: relative; }
-        #choice__section .slider__multiple-item .slider__section .slider-box .i-phone {
-          width: 4em;
-          height: 8em;
-          position: absolute;
-          left: 30%; }
-        #choice__section .slider__multiple-item .slider__section .slider-box .i-pad {
-          width: 8em;
-          height: 5em;
-          position: absolute;
-          left: 26%;
-          top: 35%; }
-        #choice__section .slider__multiple-item .slider__section .slider-box .macbook {
-          width: 8em;
-          height: 5em;
-          position: absolute;
-          left: 26%;
-          top: 35%; }
+        height: 10em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .img-iphone {
+          display: block;
+          margin: 0 auto; }
+        #choice__section .slider__multiple-item .slider__section .slider-box .img-ipad {
+          display: block;
+          margin: 0 auto;
+          transform: translateY(1rem); }
+        #choice__section .slider__multiple-item .slider__section .slider-box .img-macbook {
+          display: block;
+          margin: 0 auto;
+          transform: translateY(0.7rem); }
       #choice__section .slider__multiple-item .slider__section .display5 {
         color: #222222;
-        padding: 1rem 0;
-        padding-left: 5rem; }
+        text-align: center;
+        margin: 1rem auto; }
       #choice__section .slider__multiple-item .slider__section .slider-text {
         color: #222222;
         width: 16em;
         text-align: center;
-        padding: 0 1.5rem; }
+        padding-bottom: 1rem; }
     #choice__section .slider__multiple-item .slick-dots li {
       width: 12px;
       height: 12px;
@@ -1112,7 +1038,7 @@ form button.send {
 
 @media (max-width: 750px) {
   form {
-    width: 90%;
+    width: 85%;
     margin: 0 auto; }
   .name {
     width: 100%; }
@@ -1149,11 +1075,6 @@ form button.send {
   .contacts__right-top .name {
     margin-right: 0;
     margin-bottom: 40px; } }
-
-@media (max-width: 455px) {
-  .contacts__right-bottom textarea {
-    padding-right: 0;
-    width: 100%; } }
 
 .footer {
   height: auto;
