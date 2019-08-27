@@ -63,7 +63,6 @@
             }
         }
     }
-
     #choice__section{         
         .slider__multiple-item{  
             display: flex;
@@ -112,98 +111,8 @@
             }
         }    
     }
-    #contact__section{ 
-        grid-template-columns: 1fr; 
-        .left__section{          
-            .container {
-                padding: 0;       
-               
-                .contact__text{
-                    color: $line;                
-                    font-weight: 300;               
-                    font-style: italic;
-                    padding-bottom: 0.6em;
-                    text-align: center;
-                    font-size: 1em;
-                    
-                }        
-                .social-box{
-                    display: flex;
-                    justify-content: space-between;   
-                    align-items: center;          
-                    width: 11em;
-                    margin-top: 1.2rem;               
-                }
-            }
-        }        
-        aside{        
-            padding-top: 70px !important;
-            padding-bottom: 70px !important;                  
-            form{
-                position: absolute;
-                left: 10%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-end;             
-                input{
-                    width: 305px;
-                    height: 45px;
-                    margin-bottom: 100px;
-                    border: none;
-                    border-bottom: #afafaf solid 3px;
-                    background-color: #e4e4e4;
-                    padding: 15px 35px;
-                    color: #676767;
-                    font-style: italic;
-                    font-size: 1em;
-                    font-family: 'Amble', sans-serif;
-                    &:first-of-type{
-                        margin-right: 60px;
-                    } 
-                }                 
-               
-                textarea {                   
-                    width: 670px;
-                    border: none;
-                    border-bottom: #afafaf solid 3px;
-                    background-color: #e4e4e4;
-                    padding: 15px 35px;
-                    color: #676767;
-                    font-style: italic;
-                    font-size: 1em;
-                    margin-bottom: 40px;
-                    resize: none;
-                    font-family: 'Amble', sans-serif;
-                }
-                .send {
-                    cursor: pointer;
-                    width: 180px;
-                    height: 60px;
-                    border: 3px solid $line;
-                    color: $line;
-                    font-size: 1.2em;
-                    font-weight: bold;
-                    margin-bottom: 0;
-                    &:hover{
-                        background-color: rgba(34, 34, 34, 0.2);
-                    }
-                }
-                }  
-            }          
-            
-        } 
-    }            
-    
-@media (min-width: 577px) and (max-width: 768px){
-    .welcome__section{
-        .welcome__section_content{
-            .display1{
-                font-size: 1.2em;
-                width: 17em;
-            }
-        }
-    }      
+}   
+@media (min-width: 577px) and (max-width: 768px){        
     #work__section{
         .container{
             .work__section_content{
@@ -314,14 +223,7 @@
         }
     
 }
-@media (min-width: 769px) and (max-width: 992px){
-    .welcome__section{
-        .welcome__section_content{
-            .display1{
-                font-size: 1.5em;                
-            }
-        }
-    }      
+@media (min-width: 769px) and (max-width: 992px){         
     #work__section{
         .container{
             .work__section_content{
