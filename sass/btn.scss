@@ -53,11 +53,24 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 576px){   
+@media (min-width: 320px) and (max-width: 350px){   
     .btn-show{         
-        width: 90%;
-       
-       
+        width: 90%;  
+    } 
+}
+@media (min-width: 351px) and (max-width: 400px){   
+    .btn-show{         
+        width: 80%;  
+    } 
+}
+@media (min-width: 401px) and (max-width: 576px){   
+    .btn-show{         
+        width: 55%;  
+    } 
+}
+@media (min-width: 577px) and (max-width: 768px){   
+    .btn-show{         
+        width: 50%;  
     } 
 }
 

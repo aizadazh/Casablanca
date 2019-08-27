@@ -162,12 +162,12 @@ form button.send {
     margin: 0;
 }
  
-@media (max-width: 1220px) {
+@media (max-width: 1350px) {
     .contacts__right {
         padding-right: 15px;
     }
     .contacts__left {
-        padding-left: 15px;
+        padding-left: 7em;
     }
 }
 @media (max-width: 1169px) {
@@ -196,14 +196,17 @@ form button.send {
         max-width: 250px;
         font-size: 1.4em;
     }
+    form{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 @media (max-width: 750px) {
-    form div {
-        flex-flow: column;
-    }
-    .contacts__right-bottom textarea {
-        width: 91%;
-    }
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }   
     .name {
         width: 100%;
     }
@@ -226,11 +229,7 @@ form button.send {
         margin-top: 30px;
     }
 }
-@media (max-width: 640px) {
-    .contacts__right-bottom textarea {
-        width: 90%;
-    }
-}
+
 @media (max-width: 560px) {
     .contacts__right-top {
         flex-wrap: wrap;
@@ -256,9 +255,15 @@ form button.send {
         margin-right: 0;
         margin-bottom: 40px;
     }
+   
+}
+
+@media (max-width: 455px) {
     .contacts__right-bottom textarea {
+        padding-right: 0;
         width: 100%;
     }
 }
+
 
 

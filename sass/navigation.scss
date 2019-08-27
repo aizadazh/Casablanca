@@ -147,29 +147,22 @@ header {
 }
 
 @media (min-width: 320px) and (max-width: 576px){
-    header{
+    header{        
         .header-content{
             h1{
                 width: 80%;
                 text-align: center;
-                font-size: 1.5em;
-
+                font-size: 1.2em;
             }
             p{
-                width: 80%;
+                width: 70%;
                 text-align: center;
                 font-size: 1em;
             }
         }
-        .down_scroll {
-            width: 20px;
-            position: absolute;
-            left: calc(50% - 20px);
-            bottom: 5%;
-            .mouse {                              
-                background-image: url("../images/Mouse.png");     
+        .down_scroll {           
+            bottom: 3%;            
             }
-        }
         .navigation {
             .menu-icon {
                 left: 105%; 
@@ -178,6 +171,67 @@ header {
         }
     }
 }
+@media (min-width: 577px) and (max-width: 768px){
+    header{
+        .header-content{
+            h1{
+                width: 80%;
+                text-align: center;
+                font-size: 1.5em;
+            }
+            p{
+                width: 85%;
+                text-align: center;
+                font-size: 1.2em;
+            }
+        }
+        .down_scroll {
+            width: 20px;
+            position: absolute;
+            left: calc(50% - 20px);
+            bottom: 5%;            
+            }
+        .navigation {
+            .menu-icon {
+                left: 108%; 
+            } 
+        
+        }
+    }   
+  
+}
+@media (min-width: 769px) and (max-width: 992px){
+    header{
+        .header-content{
+            h1{
+                width: 80%;
+                text-align: center;
+                font-size: 1.8em;
+            }
+            p{
+                width: 85%;
+                text-align: center;
+                font-size: 1.5em;
+            }
+        }
+        .down_scroll {
+            width: 20px;
+            position: absolute;
+            left: calc(50% - 20px);
+            bottom: 5%;            
+            }
+        .navigation {
+            .menu-icon {
+                left: 110%; 
+            } 
+        
+        }
+    }   
+  
+}
+
+ 
+
  
 
 

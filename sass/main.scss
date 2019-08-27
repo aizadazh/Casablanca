@@ -350,11 +350,12 @@ height: auto;
         align-items: center;          
     }
     .slider__multiple-item{
-        display: flex;            
+        display: flex;  
+        justify-content: space-between;          
         .slider__section{        
             display:flex;
             flex-direction:column; 
-            align-content: center;           
+            justify-content: center;         
             padding-bottom: 2rem;
             padding-left: 2rem;                                    
             .slider-box{
