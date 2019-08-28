@@ -264,8 +264,8 @@ header {
       width: 100%;
       height: auto; }
     #about__section .container .our-employees .last-box {
-      width: 95%;
-      height: 21em;
+      width: 100%;
+      height: 20em;
       margin: 0 auto; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -301,10 +301,8 @@ header {
       width: 100%;
       height: auto; }
     #about__section .container .our-employees .last-box {
-      width: 95%;
-      height: 18.2em;
-      margin-top: 0.3em;
-      margin-left: 0.3em; } }
+      width: 100%;
+      height: 19em; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
   #work__section .container .work__section_content .work__section_categories {
@@ -337,10 +335,8 @@ header {
       width: 100%;
       height: auto; }
     #about__section .container .our-employees .last-box {
-      width: 95%;
-      height: 18.2em;
-      margin-top: 0.3em;
-      margin-left: 0.3em; } }
+      width: 100%;
+      height: 18.2em; } }
 
 @media (min-width: 993px) and (max-width: 1199px) {
   #work__section .container .work__section_content .work__section_categories {
@@ -362,8 +358,8 @@ header {
       width: 100%;
       height: auto; }
     #about__section .container .our-employees .last-box {
-      width: 95%;
-      height: 16.5em; } }
+      width: 100%;
+      height: 17.5em; } }
 
 * {
   box-sizing: border-box;
@@ -629,10 +625,11 @@ p {
       position: relative; }
       #about__section .our-employees .employee-image .img {
         width: 100%;
-        height: auto;
-        border: 5px solid transparent; }
+        height: auto; }
         #about__section .our-employees .employee-image .img:hover {
-          border: 5px solid black; }
+          outline: #000000 6px solid;
+          outline-offset: -6px;
+          filter: grayscale(100%) brightness(40%); }
       #about__section .our-employees .employee-image .link-icon {
         position: absolute;
         display: none;
@@ -658,14 +655,12 @@ p {
           font-size: 1em;
           font-weight: 500;
           font-family: "Amble-Regular"; }
-      #about__section .our-employees .employee-image:hover {
-        filter: grayscale(100%); }
-        #about__section .our-employees .employee-image:hover .link-icon {
-          display: block; }
-        #about__section .our-employees .employee-image:hover .employee-name {
-          display: block; }
-        #about__section .our-employees .employee-image:hover .employee-position {
-          display: block; }
+      #about__section .our-employees .employee-image:hover .link-icon {
+        display: block; }
+      #about__section .our-employees .employee-image:hover .employee-name {
+        display: block; }
+      #about__section .our-employees .employee-image:hover .employee-position {
+        display: block; }
     #about__section .our-employees .display4 {
       text-transform: uppercase;
       font-weight: 400;
@@ -674,12 +669,11 @@ p {
     #about__section .our-employees .last-box {
       display: flex;
       border: 1px solid #222222;
-      height: 20.2em;
+      height: 21.25em;
       width: 100%;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-top: 0.4em; }
+      align-items: center; }
 
 #video__section {
   height: 450px;

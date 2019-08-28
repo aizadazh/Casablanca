@@ -257,10 +257,12 @@ height: auto;
             position: relative;
             .img {
                 width: 100%;
-                height: auto;
-                border: 5px solid transparent;
+                height: auto;               
                 &:hover {
-                    border: 5px solid black;
+                    outline: #000000 6px solid;
+	                outline-offset: -6px;
+                    filter: grayscale(100%) brightness(40%); 
+
                 }
             }
             .link-icon{
@@ -303,7 +305,7 @@ height: auto;
                 .employee-position{
                     display: block;
                 }
-                filter: grayscale(100%); 
+               
                     
             }
         }    
@@ -316,12 +318,12 @@ height: auto;
         .last-box{
             display:flex;
             border: 1px solid $line;          
-            height: 20.2em;
+            height: 21.25em;
             width: 100%;
             flex-direction: column;
             justify-content: center;
             align-items: center; 
-            margin-top: 0.4em;
+           
                     
         }
     }
