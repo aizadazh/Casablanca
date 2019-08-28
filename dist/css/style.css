@@ -137,7 +137,7 @@ header {
     bottom: 0;
     height: 100%;
     z-index: 3;
-    width: 230px;
+    width: 250px;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -152,7 +152,7 @@ header {
     list-style: none;
     position: absolute;
     top: 0;
-    left: -40px;
+    left: 0;
     bottom: 0;
     right: 0;
     margin: 0;
@@ -274,14 +274,6 @@ header {
     text-align: center; }
     #work__section .container .work__section_content .work__section_categories #tab-btn {
       padding-bottom: 0.5rem; }
-  #work__section .container .work__section_content .work__section_images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem; }
-    #work__section .container .work__section_content .work__section_images .work_images {
-      margin-bottom: 0.01rem; }
-      #work__section .container .work__section_content .work__section_images .work_images .img {
-        width: 100%; }
   #client__section .container .client__section_content .logo-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -310,14 +302,6 @@ header {
     text-align: center; }
     #work__section .container .work__section_content .work__section_categories #tab-btn {
       padding-bottom: 0.5rem; }
-  #work__section .container .work__section_content .work__section_images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem; }
-    #work__section .container .work__section_content .work__section_images .work_images {
-      margin-bottom: 0.01rem; }
-      #work__section .container .work__section_content .work__section_images .work_images .img {
-        width: 100%; }
   #client__section .container .client__section_content .logo-section {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center; }
@@ -344,14 +328,6 @@ header {
     text-align: center; }
     #work__section .container .work__section_content .work__section_categories #tab-btn {
       padding-bottom: 0.5rem; }
-  #work__section .container .work__section_content .work__section_images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem; }
-    #work__section .container .work__section_content .work__section_images .work_images {
-      margin-bottom: 0.01rem; }
-      #work__section .container .work__section_content .work__section_images .work_images .img {
-        width: 100%; }
   #about__section .container .our-employees {
     grid-template-columns: repeat(4, 1fr); }
     #about__section .container .our-employees .employee-image .img {
@@ -1021,7 +997,7 @@ form button.send {
     margin-right: 0;
     margin-bottom: 40px; } }
 
-@media (max-width: 560px) {
+@media (max-width: 750px) {
   .contacts__right-top {
     flex-wrap: wrap;
     margin-bottom: 40px; }

@@ -129,6 +129,7 @@ $mainNavigation.singlePageNav({
     }
 });
 
+
 //closed menu on click
 $('body').click(function(e) {
     $navigation.removeClass('active');

@@ -49,122 +49,122 @@
 }
 
 #work__section{
-height: auto;   
-.work__section_content{        
-    display: flex;
-    flex-direction: column;   
-    align-items: center; 
-    .work__section_categories {
-        margin: 2rem 0;
-        #tab-btn{
-            border: none;
-            background: transparent;
-            color: $grey;
-            padding: 6px;
-            text-transform: uppercase;
-            font-size: 1.1em;
-            font-weight: 600; 
-            margin: 0 10px;  
-            cursor: pointer;
-            &:hover{
+    height: auto;   
+    .work__section_content{        
+        display: flex;
+        flex-direction: column;   
+        align-items: center; 
+        .work__section_categories {
+            margin: 2rem 0;
+            #tab-btn{
+                border: none;
+                background: transparent;
+                color: $grey;
+                padding: 6px;
+                text-transform: uppercase;
+                font-size: 1.1em;
+                font-weight: 600; 
+                margin: 0 10px;  
+                cursor: pointer;
+                &:hover{
+                    color: $line;
+                } 
+            }               
+            #tab-btn.active {
                 color: $line;
-            } 
-        }               
-        #tab-btn.active {
-            color: $line;
+                
+                }
+            }    
+        .work__section_images{        
+            display: flex;
+            justify-content: center;
+            flex-flow: wrap;        
+            .img{
+                width: 100%;
+                transition: all 1s; 
+                padding: 6px 10px;               
             
             }
-        }    
-    .work__section_images{        
-        display: flex;
-        justify-content: center;
-        flex-flow: wrap;        
-        .img{
-            width: 100%;
-            transition: all 1s; 
-            padding: 6px 10px;               
-           
-        }
-        div.hidden{
-            animation: hiddenWork 1s forwards;
-            } 
-            @keyframes hiddenWork {
-                0% {}            
-                100% {
-                opacity: 0;
-                width: 0px;
-                height: 0px;
-                margin: 0;
-                }
-            }                
-            .work>div {
-                max-width: 340px;
-                overflow: hidden;
-                width: 100%;              
-                position: relative;
-                &:hover {
-                    .overlay {
-                        display: block;
+            div.hidden{
+                animation: hiddenWork 1s forwards;
+                } 
+                @keyframes hiddenWork {
+                    0% {}            
+                    100% {
+                    opacity: 0;
+                    width: 0px;
+                    height: 0px;
+                    margin: 0;
+                    }
+                }                
+                .work>div {
+                    max-width: 340px;
+                    overflow: hidden;
+                    width: 100%;              
+                    position: relative;
+                    &:hover {
+                        .overlay {
+                            display: block;
+                        }
                     }
                 }
-            }
-            
-            .work>div>img {
-                width: 100%;
-                max-width: 340px;
-                height: 100%;            
-            } 
-        .overlay{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border: 10px solid $line;
-            display: none;
-            background-color: rgba(0, 0, 0, 0.4);                
-            cursor: pointer;                              
-            .overlay_heading{
-                position: absolute;
-                top: 38%;
-                left: 26%;
-                color: $white;
-                font-family: $font_title;
-                text-transform: uppercase;
-                font-size: 1.2em;
-                font-weight: 600;                    
-                margin-left: 1.5rem;                 
-            }
-            .overlay_link {
-                position: absolute;
-                top: 50%;
-                left: 27%;
-                color: $white;
-                font-family: $font_main;
-                text-decoration: none;                    
-                font-size: 1.5em;                    
-                font-weight: 400;
-                &::after {
-                    content: "";
-                    display: block;                       
-                    margin-top: 2rem;
-                    width: 2.5em;
-                    height: 0.1em;
-                    background-color: $red;
-                    margin-left: 2.5rem;
-                }
-                &:hover{
-                    color: $red;
-                }                    
-            }
-            &:hover{                    
-                display: block;
-                }                    
                 
-            } 
+                .work>div>img {
+                    width: 100%;
+                    max-width: 340px;
+                    height: 100%;            
+                } 
+            .overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: 10px solid $line;
+                display: none;
+                background-color: rgba(0, 0, 0, 0.4);                
+                cursor: pointer;                              
+                .overlay_heading{
+                    position: absolute;
+                    top: 38%;
+                    left: 26%;
+                    color: $white;
+                    font-family: $font_title;
+                    text-transform: uppercase;
+                    font-size: 1.2em;
+                    font-weight: 600;                    
+                    margin-left: 1.5rem;                 
+                }
+                .overlay_link {
+                    position: absolute;
+                    top: 50%;
+                    left: 27%;
+                    color: $white;
+                    font-family: $font_main;
+                    text-decoration: none;                    
+                    font-size: 1.5em;                    
+                    font-weight: 400;
+                    &::after {
+                        content: "";
+                        display: block;                       
+                        margin-top: 2rem;
+                        width: 2.5em;
+                        height: 0.1em;
+                        background-color: $red;
+                        margin-left: 2.5rem;
+                    }
+                    &:hover{
+                        color: $red;
+                    }                    
+                }
+                &:hover{                    
+                    display: block;
+                    }                    
+                    
+                } 
+            }
         }
     }
-}
 #help__section{
     height: 50vh;
     width: auto;    
