@@ -595,10 +595,11 @@ p {
     flex-direction: column;
     align-items: center; }
     #client__section .client__section_content .logo-section {
-      width: 100%;
+      width: 95%;
       display: flex;
       justify-content: space-between;
-      padding: 3rem 1rem; }
+      padding-bottom: 5rem;
+      padding-top: 3rem; }
       #client__section .client__section_content .logo-section .company-logos {
         width: 8em;
         height: auto;
@@ -651,7 +652,7 @@ p {
         position: absolute;
         display: none;
         top: 88%;
-        left: 27%; }
+        left: 28%; }
         #about__section .our-employees .employee-image .employee-position span {
           color: #ffffff;
           font-size: 1em;
@@ -822,8 +823,7 @@ p {
   margin: 3rem auto; }
   .btn-show:hover {
     background: #222222;
-    color: #ffffff;
-    border: 1px solid #ffffff; }
+    color: #ffffff; }
 
 .btn__apply {
   color: #222222;
@@ -924,47 +924,13 @@ p {
   align-items: center;
   width: 220px;
   margin-top: 20px; }
-
-.section .btn {
-  border-color: white;
-  color: white;
-  max-width: 430px;
-  padding: 0;
-  height: 100px;
-  font-size: 2em; }
-
-.btn {
-  width: 100%;
-  max-width: 325px;
-  border: 2px solid black;
-  border-radius: 0;
-  color: black;
-  text-decoration: none;
-  font-size: 1.5em;
-  padding: 12px 20px;
-  font-weight: bold;
-  margin: 0 auto;
-  background: transparent;
-  transition: color, background .4s;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.btn:hover {
-  background: #000;
-  color: #fff; }
-
-.form-box {
-  width: 66%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 60px;
-  background: #E4E4E4; }
+  .contacts__icons .icon1 {
+    padding-top: 0.2em; }
+  .contacts__icons .icon2 {
+    padding-top: 0.3em; }
 
 form {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-flow: column;
@@ -1044,16 +1010,12 @@ form button.send {
   .email {
     width: 100%;
     margin: 30px 0 0; }
-  .form-box {
-    width: 100%;
-    min-height: 300px;
-    align-items: stretch; }
   form {
     height: inherit; }
   .message {
     margin-top: 30px; }
-  form button.send {
-    margin-top: 30px; } }
+  .contact__button {
+    margin: 2rem auto; } }
 
 @media (max-width: 560px) {
   .contacts__right-top {

@@ -1,4 +1,3 @@
-$(document).ready(function(){
 // Video section
 function videoPlay() {
     document.getElementById("video__section").innerHTML = "<div id='player'></div>";
@@ -57,7 +56,7 @@ categories.forEach(category => {
       });
     });
   });
-});
+
   
   
   
