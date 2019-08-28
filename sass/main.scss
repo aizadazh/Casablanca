@@ -81,8 +81,9 @@ height: auto;
         flex-flow: wrap;        
         .img{
             width: 100%;
-            transition: all 1s;                
-            padding: 10px;
+            transition: all 1s; 
+            padding: 6px 10px;               
+           
         }
         div.hidden{
             animation: hiddenWork 1s forwards;
@@ -110,7 +111,7 @@ height: auto;
             
             .work>div>img {
                 width: 100%;
-                max-width: 370px;
+                max-width: 340px;
                 height: 100%;            
             } 
         .overlay{
@@ -119,14 +120,14 @@ height: auto;
             height: 100%;
             top: 0;
             left: 0;
-            border: 8px solid $line;
+            border: 10px solid $line;
             display: none;
             background-color: rgba(0, 0, 0, 0.4);                
             cursor: pointer;                              
             .overlay_heading{
                 position: absolute;
                 top: 38%;
-                left: 28.5%;
+                left: 26%;
                 color: $white;
                 font-family: $font_title;
                 text-transform: uppercase;
@@ -137,7 +138,7 @@ height: auto;
             .overlay_link {
                 position: absolute;
                 top: 50%;
-                left: 30%;
+                left: 27%;
                 color: $white;
                 font-family: $font_main;
                 text-decoration: none;                    

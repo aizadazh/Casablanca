@@ -22,13 +22,13 @@
     font-size: 1.5rem;
     line-height: 60px;
     color: $line;
-    border: 1px solid $line;
+    border: 3px solid $line;
     font-family: $font_main;
     font-weight: 600;
     text-align: center;
     cursor: pointer; 
     width: 27.5%;
-    margin: 2rem auto;   
+    margin: 3rem auto;   
     &:hover{
         background: $line;
         color: $white;

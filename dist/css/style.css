@@ -87,18 +87,18 @@ header {
       background: #ffffff;
       height: 2.5px;
       width: 75px;
-      margin: 2rem auto;
+      margin: 2.5rem auto;
       border: none; }
     header .header-content p {
       color: #ffffff;
-      width: 640px;
+      width: 48%;
       margin: 0 auto;
       text-align: center;
       font-size: 1.5em;
       font-family: "Amble-Regular"; }
     header .header-content h1 {
       font-family: "BigJohn";
-      font-size: 2em;
+      font-size: 2.6em;
       text-transform: uppercase;
       font-weight: 700; }
   header .navigation .menu-icon {
@@ -177,15 +177,14 @@ header {
     width: 40px;
     position: absolute;
     left: calc(50% - 20px);
-    bottom: 50px; }
+    bottom: 5%; }
   header .down_scroll .mouse {
     display: block;
     width: 30px;
     height: 48px;
     border-radius: 15px;
     background-image: url("../images/Mouse.png");
-    box-sizing: border-box;
-    padding: 5px 0 0; }
+    box-sizing: border-box; }
 
 @media (min-width: 320px) and (max-width: 576px) {
   header .header-content h1 {
@@ -490,7 +489,7 @@ p {
       #work__section .work__section_content .work__section_images .img {
         width: 100%;
         transition: all 1s;
-        padding: 10px; }
+        padding: 6px 10px; }
       #work__section .work__section_content .work__section_images div.hidden {
         animation: hiddenWork 1s forwards; }
 
@@ -510,7 +509,7 @@ p {
           display: block; }
       #work__section .work__section_content .work__section_images .work > div > img {
         width: 100%;
-        max-width: 370px;
+        max-width: 340px;
         height: 100%; }
       #work__section .work__section_content .work__section_images .overlay {
         position: absolute;
@@ -518,14 +517,14 @@ p {
         height: 100%;
         top: 0;
         left: 0;
-        border: 8px solid #222222;
+        border: 10px solid #222222;
         display: none;
         background-color: rgba(0, 0, 0, 0.4);
         cursor: pointer; }
         #work__section .work__section_content .work__section_images .overlay .overlay_heading {
           position: absolute;
           top: 38%;
-          left: 28.5%;
+          left: 26%;
           color: #ffffff;
           font-family: "BigJohn";
           text-transform: uppercase;
@@ -535,7 +534,7 @@ p {
         #work__section .work__section_content .work__section_images .overlay .overlay_link {
           position: absolute;
           top: 50%;
-          left: 30%;
+          left: 27%;
           color: #ffffff;
           font-family: "Amble-Regular";
           text-decoration: none;
@@ -814,13 +813,13 @@ p {
   font-size: 1.5rem;
   line-height: 60px;
   color: #222222;
-  border: 1px solid #222222;
+  border: 3px solid #222222;
   font-family: "Amble-Regular";
   font-weight: 600;
   text-align: center;
   cursor: pointer;
   width: 27.5%;
-  margin: 2rem auto; }
+  margin: 3rem auto; }
   .btn-show:hover {
     background: #222222;
     color: #ffffff;
